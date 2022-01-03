@@ -1,0 +1,72 @@
+:root{
+    --richBlack:#0B090A;
+    --eerieBlack:#161a1d;
+    --bloodRed: #660708;
+    --rubyRed: #a4161a;
+    --carnelian: #ba181b;
+    --imperialRed: #e5383b;
+    --silverChalice: #b1a7a6;
+    --lightGray: #d3d3d3;
+    --cutltured: #f5f3f4;
+    --white: #ffffff;
+   
+}
+
+body{
+  font-family: 'roboto', bold;
+  color: var(--cutltured);
+  font-size: 1.0em;
+  text-rendering: optimizeLegibility;
+  background: url("/img/background.jpg") no-repeat fixed; 
+  background-position: 0% 55%;
+  overflow-x:hidden;
+  background-attachment: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1{
+    color:var(--richBlack)
+}
+/* navbar */
+.navbar{
+  background: var(--mainWhite);
+  transition:all 2s ease-in-out
+;}
+.navbar.transparent.navbar-inverse .navbar-inner {
+  background: rgba(0,0,0,0.4);
+}
+.navbar-change{
+  position:fixed;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0,0,0,0.4);
+  z-index: 100;
+
+}
+.navbar-icon{
+  font-size: 2rem;
+  color: var(--mainBlue);
+}
+.navbar-toggler{
+  outline-color: var(--mainBlue)!important;
+}
+.nav-link{
+  color: var(--mainBlack);
+  text-transform: capitalize;
+}
+.nav-link:hover{
+  color: var(--mainBlue);
+}
+.nav-icon{
+  font-size: 1.5rem;
+  color: var(--mainBlue);
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0ms;
+  transition-timing-function: linear;
+}
+.nav-icon:hover{
+  color: var(--mainBlack);
+}
