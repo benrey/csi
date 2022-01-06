@@ -13,9 +13,9 @@
 }
 
 body{
-  font-family: 'roboto', bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: var(--cutltured);
-  font-size: 1.0em;
+  font-size: 1.5em;
   text-rendering: optimizeLegibility;
   background: url("/img/background.jpg") no-repeat fixed; 
   background-position: 0% 55%;
@@ -32,28 +32,35 @@ h1{
 /* navbar */
 .navbar{
   background: var(--mainWhite);
-  transition:all 2s ease-in-out
+  transition:all .2s ease-in-out
 ;}
 .navbar.transparent.navbar-inverse .navbar-inner {
-  background: rgba(0,0,0,0.4);
+  background: var(--cutltured,0.4);
 }
 .navbar-change{
   position:fixed;
   width: 100%;
   padding: 1rem;
-  background: rgba(0,0,0,0.4);
+  background: var(--cutltured,0.4);
   z-index: 100;
 
 }
 .navbar-icon{
-  font-size: 2rem;
-  color: var(--mainBlue);
+  font-size: 1.25em;
+  color: var(--cutltured);
+
 }
 .navbar-toggler{
-  outline-color: var(--mainBlue)!important;
+  color: none;
 }
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.nvabar-toggler-icon:focus {
+  box-shadow:none;
+}
+
 .nav-link{
-  color: var(--mainBlack);
+  color: var(--cutltured);
   text-transform: capitalize;
 }
 .nav-link:hover{
@@ -61,7 +68,7 @@ h1{
 }
 .nav-icon{
   font-size: 1.5rem;
-  color: var(--mainBlue);
+  color: var(--cutltured);
   text-decoration: none;
   transition-property: color;
   transition-duration: 0ms;
