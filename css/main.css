@@ -55,16 +55,18 @@ background-size: cover;
 background-repeat: no-repeat;
 backface-visibility: hidden;
 -webkit-backface-visibility: hidden;
-animation: slideShow 15s linear infinite;
 -webkit-animation: slideShow 15s linear infinite;
 -moz-animation: slideShow 15s linear infinite;
+-o-animation: slideShow 15s linear infinite;
+animation: slideShow 15s linear infinite;
 animation-timing-function: ease-in-out;
-
 background-image: url("/img/work/1.jpg");
 }
-
   @keyframes slideShow{
-    0%{
+    0% {
+      background-image: url("/img/work/1.jpg"), url("/img/work/1.jpg")
+    }
+    10%{
       background-image: url("/img/work/1.jpg"), url("/img/work/19.jpg")
     }
     30%{
@@ -100,6 +102,8 @@ h1{
 /* navbar */
 .navbar{
   padding-top: 2em;
+  margin-left:1em;
+  margin-right:2em;
   background: var(--mainWhite);
   transition:all .2s ease-in-out;
 ;}
