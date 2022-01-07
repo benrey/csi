@@ -60,29 +60,29 @@ backface-visibility: hidden;
 -o-animation: slideShow 15s linear infinite;
 animation: slideShow 15s linear infinite;
 animation-timing-function: ease-in-out;
-background-image: url("/img/work/1.jpg");
+background-image: url("../img/work/1.jpg");
 }
   @keyframes slideShow{
     0% {
-      background-image: url("/img/work/1.jpg"), url("/img/work/1.jpg")
+      background-image: url("../img/work/1.jpg"), url("../img/work/1.jpg")
     }
     10%{
-      background-image: url("/img/work/1.jpg"), url("/img/work/19.jpg")
+      background-image: url("../img/work/1.jpg"), url("../img/work/19.jpg")
     }
     30%{
-      background-image: url("/img/work/19.jpg"), url("/img/work/48.jpg")
+      background-image: url("../img/work/19.jpg"), url("../img/work/48.jpg")
     }
     40%{
-      background-image: url("/img/work/48.jpg"), url("/img/work/53.jpg")
+      background-image: url("../img/work/48.jpg"), url("../img/work/53.jpg")
     }
     50% {
-      background-image: url("/img/work/53.jpg"), url("/img/work/12.JPG")
+      background-image: url("../img/work/53.jpg"), url("../img/work/12.JPG")
     }
     60% {
-      background-image: url("/img/work/12.JPG"), url("/img/work/34.JPG")
+      background-image: url("../img/work/12.JPG"), url("../img/work/34.JPG")
     }
     70% {
-      background-image: url("/img/work/34.JPG"), url("/img/work/1.jpg")
+      background-image: url("../img/work/34.JPG"), url("../img/work/1.jpg")
     }
   }
 #wrapper {
