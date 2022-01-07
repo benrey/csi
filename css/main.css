@@ -11,21 +11,89 @@
     --white: #ffffff;
    
 }
+@font-face {
+  font-family: 'post-grotesk';
+  /* IE9 Compat Modes */src:url("/fonts/postGrotesk/PostGroteskMedium.otf");
+  /* IE6-IE8 *//* Modern Browsers *//* Safari, Android, iOS *//* Legacy iOS */src:url("/fonts/postGrotesk/PostGroteskMedium.otf?#iefix") format('embedded-opentype'),
+  url("/fonts/post-grotesk/PostGrotesk-Medium.woff") format('woff'),
+  url("/fonts/post-grotesk/PostGrotesk-Medium.ttf") format('truetype'),
+  url("/fonts/post-grotesk/PostGrotesk-Medium.svg#svgFontName") format('svg');
+  font-weight:500;
+  font-style:normal;
+ }
+*,
+*::before,
+*::after {
+ box-sizing:border-box;
+}
 
+body:not(.loaded) #sliderShow img {
+  display:none;
+}
 body{
+  overflow-x:hidden;
   font-family:Verdana, Tahoma, sans-serif;
   color: var(--cutltured);
   font-size: 1.5em;
   text-rendering: optimizeLegibility;
-  background: url("/img/background.jpg") no-repeat fixed; 
-  background-position: 0% 55%;
-  overflow-x:hidden;
-  background-attachment: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  margin:0px;
+  padding:0px;
+  width: 100%;
+  height: 100vh;
 }
+#slideShow{
+overflow-x:hidden;
+background-attachment: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+width:100%;
+height: 100%;
+background-size: cover;
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
+animation: slideShow 15s linear infinite;
+-webkit-animation: slideShow 15s linear infinite;
+-moz-animation: slideShow 15s linear infinite;
+animation-timing-function: ease-in-out;
+
+background-image: url("/img/work/1.jpg");
+}
+
+  @keyframes slideShow{
+    0%{
+      background-image: url("/img/work/1.jpg"), url("/img/work/19.jpg")
+    }
+    30%{
+      background-image: url("/img/work/19.jpg"), url("/img/work/48.jpg")
+    }
+    40%{
+      background-image: url("/img/work/48.jpg"), url("/img/work/53.jpg")
+    }
+    50% {
+      background-image: url("/img/work/53.jpg"), url("/img/work/12.JPG")
+    }
+    60% {
+      background-image: url("/img/work/12.JPG"), url("/img/work/34.JPG")
+    }
+    70% {
+      background-image: url("/img/work/34.JPG"), url("/img/work/1.jpg")
+    }
+  }
+#wrapper {
+  margin-right: 20px;
+  margin-left:  20px;
+  max-width: 100%;
+  max-height: 100%;
+  right:0;
+  left:0;
+  padding-right: 1px;
+  padding-left:  1px;
+
+  }
 h1{
     color:var(--richBlack)
 }
@@ -34,17 +102,14 @@ h1{
   padding-top: 2em;
   background: var(--mainWhite);
   transition:all .2s ease-in-out;
-  float:right;
 ;}
+
+/* fix for screen sizes
 @media (min-height:680px), screen and (orientation:portrait) {
   div{position:relative;}
 }
-div img {
-  position: absolute;
-  top: 20px;
-  width: 200px;
-  margin-bottom: 20px;}
-  }
+
+*/
 
 .navbar-brand { 
   overflow: visible;
@@ -57,7 +122,6 @@ div img {
 .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
-    align-items: right;
 }
 .navbar.transparent.navbar-inverse .navbar-inner {
   background: var(--cutltured,0.4);
@@ -86,18 +150,21 @@ div img {
 .nvabar-toggler-icon:focus {
   box-shadow:none;
 }
+.nav-item{
+  text-align: center;
+}
 .nav-item:focus,
 .nav-item:active {
   padding: 0px;
   margin: 0px;
 }
 .nav-link {
-  font-family: 'arial narrow', sans-serif;
+  font-family:sans-serif;
   font-weight: 400;
   letter-spacing: 4px;
   font-size: .70em;
   padding: 1px 1px;
-  margin: 10px 20px;
+  margin: 10px 10px;
 
 }
 
@@ -109,6 +176,7 @@ div img {
   color: var(--mainBlue);
 }
 .nav-icon{
+  float:inherit;
   font-size: 1.5rem;
   color: var(--cutltured);
   text-decoration: none;
