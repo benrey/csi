@@ -71,13 +71,25 @@ background-image: url("../img/work/1.jpg");
       background-image: url("../img/work/53.jpg"), url("../img/work/12.JPG")
     }
     60% {
-      background-image: url("../img/work/12.JPG"), url("../img/work/34.JPG")
+      background-image: url("../img/work/61.JPG"), url("../img/work/54.JPG")
     }
     70% {
-      background-image: url("../img/work/34.JPG"), url("../img/work/1.jpg")
+      background-image: url("../img/work/54.JPG"), url("../img/work/1.jpg")
     }
   }
 
+
+.wrapper {
+  margin-right: 20px;
+  margin-left:  20px;
+  max-width: 100%;
+  max-height: 100%;
+  right:0;
+  left:0;
+  padding-right: 1px;
+  padding-left:  1px;
+  padding-top: 20px
+  }
 h1{
     color:var(--richBlack);
 }
