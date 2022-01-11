@@ -5,22 +5,14 @@
     --rubyRed: #a4161a;
     --carnelian: #ba181b;
     --imperialRed: #e5383b;
+    --brightfuckingred: #ff002b;
     --silverChalice: #b1a7a6;
     --lightGray: #d3d3d3;
     --cutltured: #f5f3f4;
     --white: #ffffff;
    
 }
-@font-face {
-  font-family: 'post-grotesk';
-  /* IE9 Compat Modes */src:url("/fonts/postGrotesk/PostGroteskMedium.otf");
-  /* IE6-IE8 *//* Modern Browsers *//* Safari, Android, iOS *//* Legacy iOS */src:url("/fonts/postGrotesk/PostGroteskMedium.otf?#iefix") format('embedded-opentype'),
-  url("/fonts/post-grotesk/PostGrotesk-Medium.woff") format('woff'),
-  url("/fonts/post-grotesk/PostGrotesk-Medium.ttf") format('truetype'),
-  url("/fonts/post-grotesk/PostGrotesk-Medium.svg#svgFontName") format('svg');
-  font-weight:500;
-  font-style:normal;
- }
+
 *,
 *::before,
 *::after {
@@ -85,25 +77,14 @@ background-image: url("../img/work/1.jpg");
       background-image: url("../img/work/34.JPG"), url("../img/work/1.jpg")
     }
   }
-#wrapper {
-  margin-right: 20px;
-  margin-left:  20px;
-  max-width: 100%;
-  max-height: 100%;
-  right:0;
-  left:0;
-  padding-right: 1px;
-  padding-left:  1px;
 
-  }
 h1{
-    color:var(--richBlack)
+    color:var(--richBlack);
 }
 /* navbar */
 .navbar{
-  padding-top: 2em;
-  margin-left:1em;
-  margin-right:2em;
+  padding: 0 40px;
+  max-width: 1320px;
   background: var(--mainWhite);
   transition:all .2s ease-in-out;
 ;}
@@ -117,11 +98,59 @@ h1{
 
 .navbar-brand { 
   overflow: visible;
+  width: 20px;
+  flex-grow: .25;
+  float: right;
 }
 .navbar-brand>img {
-  max-height: 50px;
-  max-width: 50px; 
+  max-height: 40px;
+  max-width: 40px;
+  float: right;
 }
+
+.navbar-brand:hover {
+  filter: invert(60%) sepia(82%) saturate(6261%) hue-rotate(344deg) brightness(101%) contrast(114%);
+}
+
+.navbar-brand-text {
+  float: right;
+  font-family: 'Calibri';
+  font-size: 1em;
+  letter-spacing: 2px;
+  margin-bottom: .25em;
+  color: var(--cutltured);
+  position: relative;
+  display: block;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+  
+}
+.navbar-brand-text:after {
+  position: absolute;
+  color: var(--cutltured);
+  content: "";
+  width: 65%;
+  height: 3px;
+  top: 100%;
+  left: 17%;
+  background: var(--brightfuckingred);
+  transition: transform 0.1s;
+  transform: scaleX(0);
+  transform-origin: top;
+}
+
+.navbar-brand-text:hover {
+  text-decoration-color: var(--brightfuckingred);
+  color: var(--cutltured);
+}
+
+.nav-bar-brand-text:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom;
+}
+
 }
 .navbar-collapse {
     flex-basis: 100%;
@@ -163,22 +192,42 @@ h1{
   margin: 0px;
 }
 .nav-link {
-  font-family:sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   font-weight: 400;
   letter-spacing: 4px;
-  font-size: .70em;
-  padding: 1px 1px;
+  font-size: .55em;
+  padding: 4px 0px;
   margin: 10px 10px;
-
-}
-
-.nav-link{
   color: var(--cutltured);
   text-transform: capitalize;
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.nav-link:after {
+  position: absolute;
+  color: var(--cutltured);
+  content: "";
+  width: 65%;
+  height: 3px;
+  top: 100%;
+  left: 17%;
+  background: var(--brightfuckingred);
+  transition: transform 0.1s;
+  transform: scaleX(0);
+  transform-origin: top;
 }
 .nav-link:hover{
-  color: var(--mainBlue);
+  text-decoration-color: var(--brightfuckingred);
+  color: var(--cutltured);
 }
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom;
+}
+
 .nav-icon{
   float:inherit;
   font-size: 1.5rem;
