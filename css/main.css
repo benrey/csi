@@ -17,6 +17,7 @@
 @media (min-height:640px), screen and (orientation:portrait) {
   section {
     background-attachment:initial;
+    background-image: initial;
   }
   div{position:relative;}
 }
