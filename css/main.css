@@ -263,10 +263,11 @@ h1{
 
 .footerCerakotehref>img{
   max-height: 200px;
-  max-width: 240px;
+  max-width: 220px;
   float: center;
 }
 
+
 .para {
-  font-size: .75em;
+  font-size: .65em;
 }
