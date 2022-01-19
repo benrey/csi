@@ -52,7 +52,7 @@ backface-visibility: hidden;
 -o-animation: slideShow 15s linear infinite;
 animation: slideShow 15s linear infinite;
 animation-timing-function: ease-in-out;
-background-image: url("../img/work/1.jpg");
+background-image: url("../img/work/1.jpg"), url("../img/work/1.jpg");
 }
   @keyframes slideShow{
     0% {
@@ -148,14 +148,14 @@ h1{
   top: 100%;
   left: 17%;
   background: var(--brightfuckingred);
-  transition: transform 0.1s;
+  transition: transform 0.05s;
   transform: scaleX(0);
   transform-origin: top;
 }
 
 .navbar-brand-text:hover {
   text-decoration-color: var(--brightfuckingred);
-  color: var(--cutltured);
+  filter: invert(60%) sepia(82%) saturate(6261%) hue-rotate(344deg) brightness(101%) contrast(114%);
 }
 
 .nav-bar-brand-text:hover::after {
@@ -182,7 +182,6 @@ h1{
 .navbar-icon{
   font-size: 1.25em;
   color: var(--cutltured);
-
 }
 .navbar-nav {
   padding-right: 30px;
@@ -249,6 +248,13 @@ h1{
   transition-duration: 0ms;
   transition-timing-function: linear;
 }
-.nav-icon:hover{
-  color: var(--mainBlack);
+.nav-icon:hover, .nav-icon:after {
+  filter: invert(60%) sepia(82%) saturate(6261%) hue-rotate(344deg) brightness(101%) contrast(114%);
+}
+
+.featurefbhref>img{
+    max-height: 40px;
+    max-width: 40px;
+    float: center;
+  }
 }
