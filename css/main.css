@@ -17,6 +17,7 @@
 @media (min-height:640px), screen and (orientation:portrait) {
   section {
     background-attachment:initial;
+    background-image: initial;
   }
   div{position:relative;}
 }
@@ -76,13 +77,13 @@ background-image: url(..img/work/1.jpg), url(../img/work/1.jpg);
       background-image: url(../img/work/48.jpg), url(../img/work/53.jpg)
     }
     50% {
-      background-image: url(../img/work/53.jpg), url(../img/work/12.JPG)
+      background-image: url(../img/work/53.jpg), url(../img/work/12.jpg)
     }
     60% {
-      background-image: url(../img/work/61.JPG), url(../img/work/54.JPG)
+      background-image: url(../img/work/61.jpg), url(../img/work/54.jpg)
     }
     70% {
-      background-image: url(../img/work/54.JPG), url(../img/work/1.jpg)
+      background-image: url(../img/work/54.jpg), url(../img/work/1.jpg)
     }
   }
 
