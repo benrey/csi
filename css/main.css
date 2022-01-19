@@ -13,6 +13,14 @@
    
 }
 
+/*fix for screen sizes */
+@media (min-height:640px), screen and (orientation:portrait) {
+  section {
+    background-attachment:initial;
+  }
+  div{position:relative;}
+}
+
 *,
 *::before,
 *::after {
@@ -52,7 +60,7 @@ backface-visibility: hidden;
 -o-animation: slideShow 15s linear infinite;
 animation: slideShow 15s linear infinite;
 animation-timing-function: ease-in-out;
-background-image: url(../img/work/1.jpg), url(../img/work/1.jpg);
+background-image: url(..img/work/1.jpg), url(../img/work/1.jpg);
 }
   @keyframes slideShow{
     0% {
@@ -99,14 +107,9 @@ h1{
   max-width: auto;
   background: var(--mainWhite);
   transition:all .2s ease-in-out;
-;}
-
-/* fix for screen sizes
-@media (min-height:680px), screen and (orientation:portrait) {
-  div{position:relative;}
 }
 
-*/
+
 
 .navbar-brand { 
   overflow: visible;
@@ -127,7 +130,7 @@ h1{
 .navbar-brand-text {
   float: right;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1em;
+  font-size: .80em;
   letter-spacing: 2px;
   margin-bottom: .25em;
   color: var(--cutltured);
@@ -142,7 +145,6 @@ h1{
 .navbar-brand-text:after {
   position: absolute;
   color: var(--cutltured);
-  content: "";
   width: 65%;
   height: 3px;
   top: 100%;
