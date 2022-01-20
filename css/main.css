@@ -13,14 +13,6 @@
    
 }
 
-/*fix for screen sizes */
-@media (min-height:640px), screen and (orientation:portrait) {
-  section {
-    background-attachment:initial;
-    background-image: initial;
-  }
-  div{position:relative;}
-}
 
 *,
 *::before,
@@ -186,9 +178,7 @@ h1{
   font-size: 1.25em;
   color: var(--cutltured);
 }
-.navbar-nav {
-  padding-right: 30px;
-}
+
 .navbar-toggler{
   color: none;
 }
@@ -270,4 +260,56 @@ h1{
 
 .para {
   font-size: .65em;
+}
+
+
+/*fix for screen sizes */
+@media (min-height:640px), screen and (orientation:portrait) {
+  section {
+  background-attachment:initial;
+  background-image: initial;
+}
+div{position:relative;}
+}
+
+/*fix for collapsed menu on small width protrait screens */
+@media (max-width:767px) {
+.nav-link {
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-size: .55em;
+  padding: 0px 0px;
+  margin: 10px 10px;
+  color: var(--cutltured);
+  text-transform: capitalize;
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+.nav-link:after {
+  position: absolute;
+  color: var(--cutltured);
+  content: "";
+  width: 65%;
+  height: 3px;
+  top: 100%;
+  left: 17%;
+  background: var(--brightfuckingred);
+  transition: transform 0.1s;
+  transform: scaleX(0);
+  transform-origin: top;
+
+}
+.nav-link:hover{
+  text-decoration-color: var(--brightfuckingred);
+  color: var(--cutltured);
+}
+
+.nav-link:hover::after {
+  transform: scaleX(.20);
+  transform-origin: bottom;
+}
+.nav-icons {
+text-align: center;
 }
