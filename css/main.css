@@ -264,10 +264,9 @@ h1{
 
 
 /*fix for screen sizes */
-@media (min-height:640px), screen and (orientation:portrait) {
+@media (max-width:1284px), screen and (orientation:portrait) {
   section {
   background-attachment:initial;
-  background-image: initial;
 }
 div{position:relative;}
 }
@@ -312,4 +311,5 @@ div{position:relative;}
 }
 .nav-icons {
 text-align: center;
+}
 }
