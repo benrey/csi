@@ -43,6 +43,29 @@ body{
   -o-background-size: cover; 
   background-size: cover; 
 }
+
+
+/*Squeeze*/
+.hamburger--squeeze .hamburger-inner {
+  transition-duration: 0.075s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .hamburger--squeeze .hamburger-inner::before {
+  transition: top 0.075s 0.12s ease, opacity 0.075s ease; }
+  .hamburger--squeeze .hamburger-inner::after {
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .hamburger--squeeze.is-active .hamburger-inner {
+  transform: rotate(45deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .hamburger--squeeze.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.075s ease, opacity 0.075s 0.12s ease; }
+  .hamburger--squeeze.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  
 #slideShow{
 overflow-x:hidden;
 background-attachment: cover;
@@ -190,12 +213,71 @@ h1{
 
 .navbar-toggler{
   color: none;
+  width: 1px;
+  height: 1px;
+  position: relative;
+  transition: .5s ease-in-out;
 }
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .nvabar-toggler-icon:focus {
-  box-shadow:none;
+  box-shadow: none;
+  outline: none;
+  border: 0;
 }
+.navbar-toggler span {
+  margin: 0;
+  padding:0;
+}
+.toggler-icon {
+  display: blok;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: var(--cutltured);
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: roatate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+/* when nav is clicked */
+.navbar-toggler .top-bar {
+  margin-top: 0px;
+  transform: rotate(135deg);
+}
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar {
+  margin-top: 0px;
+  transform: rotate(-135deg);
+}
+
+
+/* navbar is collapsed */
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -10px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  margin-top: 10px;
+  transform: rotate(0deg);
+}
+
+
+
 .nav-item{
   text-align: center;
 }
