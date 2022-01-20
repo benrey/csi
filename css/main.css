@@ -232,7 +232,7 @@ h1{
 .toggler-icon {
   display: blok;
   position: absolute;
-  height: 3px;
+  height: 2px;
   width: 100%;
   background: var(--cutltured);
   border-radius: 1px;
@@ -262,7 +262,7 @@ h1{
 
 /* navbar is collapsed */
 .navbar-toggler.collapsed .top-bar {
-  margin-top: -10px;
+  margin-top: -8px;
   transform: rotate(0deg);
 }
 
@@ -272,7 +272,7 @@ h1{
 }
 
 .navbar-toggler.collapsed .bottom-bar {
-  margin-top: 10px;
+  margin-top: 8px;
   transform: rotate(0deg);
 }
 
