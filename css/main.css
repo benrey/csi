@@ -33,6 +33,15 @@ body{
   padding:0px;
   width: 100%;
   height: 100vh;
+  background: url(/img/work/1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: 100%; 
+  -moz-background-size: 100%; 
+  -o-background-size: 100%; 
+  background-size: 100%; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
 }
 #slideShow{
 overflow-x:hidden;
