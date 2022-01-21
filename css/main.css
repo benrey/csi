@@ -20,11 +20,8 @@
  box-sizing:border-box;
 }
 
-body:not(.loaded) #sliderShow img {
-  display:none;
-}
 body{
-  overflow:hidden;
+  overflow-x:hidden;
   font-family:Verdana, Tahoma, sans-serif;
   color: var(--cutltured);
   font-size: 1.5em;
@@ -44,30 +41,14 @@ body{
   background-size: cover; 
 }
 
+body:not(.loaded) #sliderShow img {
+  display:none;
+}
 
-/*Squeeze*/
-.hamburger--squeeze .hamburger-inner {
-  transition-duration: 0.075s;
-  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-  .hamburger--squeeze .hamburger-inner::before {
-  transition: top 0.075s 0.12s ease, opacity 0.075s ease; }
-  .hamburger--squeeze .hamburger-inner::after {
-  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-  .hamburger--squeeze.is-active .hamburger-inner {
-  transform: rotate(45deg);
-  transition-delay: 0.12s;
-  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
-  .hamburger--squeeze.is-active .hamburger-inner::before {
-  top: 0;
-  opacity: 0;
-  transition: top 0.075s ease, opacity 0.075s 0.12s ease; }
-  .hamburger--squeeze.is-active .hamburger-inner::after {
-  bottom: 0;
-  transform: rotate(-90deg);
-  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
-  
+
+
 #slideShow{
-overflow:hidden;
+overflow-x:hidden;
 background-attachment: cover;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -338,13 +319,16 @@ h1{
 
 .jumbotron {
   margin-top: 15em;
+  color: var(--cutltured)
 }
+
 
 .featurefbhref>img{
     max-height: 40px;
     max-width: 40px;
     float: center;
 }
+
 
 .footerCerakotehref>img{
   max-height: 200px;
@@ -408,3 +392,5 @@ div{position:relative;}
 text-align: center;
 }
 }
+
+
