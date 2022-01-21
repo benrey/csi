@@ -24,7 +24,7 @@ body:not(.loaded) #sliderShow img {
   display:none;
 }
 body{
-  overflow-x:hidden;
+  overflow:hidden;
   font-family:Verdana, Tahoma, sans-serif;
   color: var(--cutltured);
   font-size: 1.5em;
@@ -67,7 +67,7 @@ body{
   transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
   
 #slideShow{
-overflow-x:hidden;
+overflow:hidden;
 background-attachment: cover;
 -webkit-background-size: cover;
 -moz-background-size: cover;
