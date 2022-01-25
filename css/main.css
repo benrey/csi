@@ -66,14 +66,14 @@ backface-visibility: hidden;
 -o-animation: slideShow 15s linear infinite;
 animation: slideShow 15s linear infinite;
 animation-timing-function: ease-in-out;
-background-image: url(..img/work/3.jpg), url(../img/work/3.jpg);
+background-image: url(..img/work/3.JPG), url(../img/work/3.JPG);
 }
   @keyframes slideShow{
     0% {
-      background-image: url(../img/work/3.jpg), url(../img/work/3.jpg)
+      background-image: url(../img/work/3.JPG), url(../img/work/3.JPG)
     }
     10%{
-      background-image: url(../img/work/3.jpg), url(../img/work/19.jpg)
+      background-image: url(../img/work/3.JPG), url(../img/work/19.jpg)
     }
     30%{
       background-image: url(../img/work/19.jpg), url(../img/work/48.jpg)
@@ -88,7 +88,7 @@ background-image: url(..img/work/3.jpg), url(../img/work/3.jpg);
       background-image: url(../img/work/63.jpg), url(../img/work/54.jpg)
     }
     100% {
-      background-image: url(../img/work/54.jpg), url(../img/work/3.jpg)
+      background-image: url(../img/work/54.jpg), url(../img/work/3.JPG)
     }
   }
 
