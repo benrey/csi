@@ -1,6 +1,7 @@
-$(function () {
-    $(document).scroll(function () {
-      var $nav = $(".navbar");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-  });
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('transparent');
+  } else {
+    $('nav').removeClass('transparent');
+  }
+});
