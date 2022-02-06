@@ -345,7 +345,9 @@ div{position:relative;}
 nav.navbar {
   padding: 15px 10px 5px 5px; 
 }
-
+.navbar-nav {
+  margin-right: 0px;
+}
 .nav-link {
   font-family:Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -383,5 +385,15 @@ nav.navbar {
   transform-origin: bottom;
 }
 .nav-icons {
-text-align: center;
+  text-align: center;
+}
+
+.push{
+  transition: ease-in-out all .2s;
+  padding-top: 90px;
+}
+
+.pushUp{
+  transition: ease-in-out all .2s;
+  padding-top: 0px;
 }
