@@ -19,36 +19,12 @@
 *::after {
  box-sizing:border-box;
 }
-
-
-
 body:not(.loaded) #sliderShow img {
   display:none;
 }
-
-#index1{
-  overflow-x:hidden;
-  overflow:hidden;
-  font-family:Verdana, Tahoma, sans-serif;
-  color: var(--cutltured);
-  font-size: 1.5em;
-  text-rendering: optimizeLegibility;
-  margin:0px;
-  padding:0px;
-  width: 100%;
-  height: 100vh;
-  -webkit-background-size: 100%; 
-  -moz-background-size: 100%; 
-  -o-background-size: 100%; 
-  background-size: 100%; 
-  -webkit-background-size: cover; 
-  -moz-background-size: cover; 
-  -o-background-size: cover; 
-  background-size: cover; 
-  background-image: url(../img/work/3.JPG);
-  background-repeat: no-repeat;
+#index {
+  background-image: url(../img/work/3.JPG), url(../img/work/3.JPG);
 }
-
 #slideShow{
 width:100%;
 height: 100%;
@@ -69,8 +45,9 @@ backface-visibility: hidden;
 animation: slideShow ease-in-out 25s both infinite;
 animation-timing-function: ease-in-out;
 background-repeat: no-repeat;
-background-image: url(../img/work/3.JPG), url(../img/work/3.JPG);}
-  @keyframes slideShow{
+background-image: url(../img/work/3.JPG), url(../img/work/3.JPG);
+}
+@keyframes slideShow{
     0% {
       background-image: url(../img/work/3.JPG), url(../img/work/3.JPG)
     }
@@ -93,34 +70,34 @@ background-image: url(../img/work/3.JPG), url(../img/work/3.JPG);}
       background-image: url(../img/work/54.jpg), url(../img/work/3.JPG)
     }
   }
-
-
 .header {
   margin-right: 20px;
   margin-left:  20px;
   max-width: 100%;
   max-height: 100%;
+  height: 84.6px;
   right:0;
   left:0;
   padding-right: 1px;
   padding-left:  1px;
   padding-top: 20px
-  }
+}
 h1{
     color:var(--richBlack);
 }
 nav.navbar {
   -webkit-transition: all 0.4s ease !important;
   transition: all 0.4s ease !important;
-  padding: 25px 30px 10px 15px !important; 
+  padding: 25px 20px 10px 10px !important; 
   max-width: auto !important;
   background-color:rgba(0,0,0,0) !important;
-
 }
 
 nav.navbar.transparent {
   background-color: #222 !important;
 }
+
+
 
 .navbar-brand { 
   overflow: visible;
@@ -140,7 +117,7 @@ nav.navbar.transparent {
 
 .navbar-brand-text {
   float: right;
-  font-size: 1.5em;
+  font-size: 1.4em;
   letter-spacing: 3px;
   margin-bottom: .25em;
   color: var(--cutltured);
@@ -264,7 +241,9 @@ nav.navbar.transparent {
   transform: rotate(0deg);
 }
 
-
+#mynav {
+  position:absolute;
+}
 
 .nav-item{
   text-align: center;
@@ -363,6 +342,10 @@ div{position:relative;}
 
 /*fix for collapsed menu on small width protrait screens */
 @media (max-width:767px) {
+nav.navbar {
+  padding: 15px 10px 5px 5px; 
+}
+
 .nav-link {
   font-family:Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -402,6 +385,3 @@ div{position:relative;}
 .nav-icons {
 text-align: center;
 }
-}
-
-
