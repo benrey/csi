@@ -22,7 +22,7 @@
 body:not(.loaded) #sliderShow img {
   display:none;
 }
-#index {
+body {
   background-image: url(../img/work/3.JPG), url(../img/work/3.JPG);
 }
 #slideShow{
