@@ -12,6 +12,8 @@
     --white: #ffffff;
    
 }
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 
 *,
@@ -36,9 +38,6 @@ background-size: cover;
 backface-visibility: hidden;
 -webkit-backface-visibility: hidden;
 -webkit-animation: slideShow ease-in-out 25s both infinite;
--moz-animation: slideShow ease-in-out 25s both infinite;
--o-animation: slideShow ease-in-out 25s both infinite;
-animation: slideShow ease-in-out 25s both infinite;
 animation-timing-function: ease-in-out;
 background-repeat: no-repeat;
 background-image: url(../img/work/3.JPG), url(../img/work/3.JPG);
@@ -320,9 +319,23 @@ nav.navbar.transparent {
 }
 
 .jumbotron {
-  margin-top: 4em;
+  padding-top: 3.8em;
   color: var(--cutltured)
 }
+.jumbotron .container-xxl,.jumbotron h1{
+  padding-top: 40vh;
+  color:var(--cutltured);
+  font-family: 'Merriweather', serif;
+  font-size: 2em;
+ }
+ .jumbotron h2 {
+  font-size: 1.7em;
+ }
+ .jumbotron p {
+   font-family: Arial, Helvetica, sans-serif;
+   max-width: 575px;
+ }
+
 
 #features {
   margin-top: 10em;
