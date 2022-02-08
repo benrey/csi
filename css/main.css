@@ -1,6 +1,7 @@
 :root{
     --richBlack:#0B090A;
     --eerieBlack:#161a1d;
+    --greyBlack: #222222;
     --bloodRed: #660708;
     --rubyRed: #a4161a;
     --carnelian: #ba181b;
@@ -13,8 +14,7 @@
    
 }
 /*fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:wght@100;300;400&display=swap');
 
 *,
 *::before,
@@ -326,10 +326,17 @@ nav.navbar.transparent {
  }
 
 
-#features {
-
+.feature.card {
+  padding: 1em;
+  background-color: var(--greyBlack);
 }
-
+.feature.card h3{
+  font-family: 'Roboto';
+  letter-spacing: 2px;
+  font-size: .55em;
+  font-weight: 300;
+  font-display:
+}
 
 .featurefbhref>img{
     max-height: 40px;
