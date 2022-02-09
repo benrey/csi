@@ -88,11 +88,14 @@ background-image: url(../img/work/4.jpg), url(../img/work/4.jpg);
 h1{
     color:var(--richBlack);
 }
+.d-flex {
+  max-width: 1420px;
+  padding: 20px 50px 20px 250px;
+}
 nav.navbar {
   -webkit-transition: all 0.4s ease !important;
   margin: auto;
   background-color:rgba(0,0,0,0) !important;
-  padding: 40px 190px 17px 190px !important;
 }
 nav.navbar.transparent {
   background-color: #222 !important;
@@ -340,10 +343,12 @@ nav.navbar.transparent {
     float: center;
 }
 
-
+.footer .container {
+  max-width: 1320px;
+}
 .footerCerakotehref>img{
   max-height: 200px;
-  max-width: 220px;
+  max-width: 200px;
   float: center;
 }
 
