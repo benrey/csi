@@ -90,24 +90,19 @@ h1{
 }
 nav.navbar {
   -webkit-transition: all 0.4s ease !important;
-  transition: all 0.4s ease !important;
-  padding: 25px 20px 10px 10px !important; 
-  max-width: auto !important;
+  margin: auto;
   background-color:rgba(0,0,0,0) !important;
+  padding: 40px 190px 17px 190px !important;
 }
-
 nav.navbar.transparent {
   background-color: #222 !important;
 }
-
-
 
 .navbar-brand { 
   overflow: visible;
   width: 20px;
   float: right;
   flex-grow: .2;
-  padding-left: 5.5em;
 }
 .navbar-brand>img {
   max-height: 40px;
@@ -245,8 +240,8 @@ nav.navbar.transparent {
   transform: rotate(0deg);
 }
 
-#mynav {
-  position:absolute;
+.navbar .collapse {
+  padding-right: 2000px;
 }
 
 .nav-item{
@@ -312,10 +307,11 @@ nav.navbar.transparent {
   color: var(--cutltured)
 }
 .jumbotron .container-xxl,.jumbotron h1{
-  padding-top: 40vh;
+  padding-top: 50vh;
   color:var(--cutltured);
   font-family: 'Merriweather', serif;
   font-size: 2em;
+  max-width: 1320px;
  }
  .jumbotron h2 {
   font-size: 1.7em;
@@ -366,7 +362,6 @@ section {
 div{position:relative;}
 }
 .navbar-brand {
-  padding-left: 3em;
   float: left;
 }
 
@@ -422,11 +417,14 @@ nav.navbar {
 .nav-icons {
   text-align: center;
 }
-.jumbotron .container-xxl,.jumbotron h1{
+.jumbotron .container-xxl, .jumbotron h1{
   padding-top: 40vh;
   color:var(--cutltured);
   font-family: 'Merriweather', serif;
   font-size: 1.35em;
+}
+.container-xxl h2{
+  text-align: left !important;
 }
 .jumbotron h2 {
   font-size: 1.35em;
