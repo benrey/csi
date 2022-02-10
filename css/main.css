@@ -362,10 +362,6 @@ nav.navbar.transparent {
 section {
   background-attachment:initial;
 }
-.d-flex {
-  max-width: 1220px;
-  padding: 10px 25px 10px 125px;
-}
 
 .navbar-text {
   float: right;
@@ -382,6 +378,9 @@ div{position:relative;}
 
 /*fix for collapsed menu on small width protrait screens */
 @media (max-width:767px) {
+  .navbar-brand-text {
+    padding: 0px 15px 0px 15px;
+  }
 .nav-link {
   font-family:Arial, Helvetica, sans-serif;
   font-weight: 400;
