@@ -117,7 +117,6 @@ nav.navbar.transparent {
 }
 
 .navbar-brand-text {
-  float: right;
   font-size: 1.4em;
   letter-spacing: 3px;
   margin-bottom: .25em;
@@ -211,6 +210,9 @@ nav.navbar.transparent {
 .middle-bar {
   margin-top: 0px;
 }
+.toggled {
+  float: right;
+}
 /* when nav is clicked */
 .navbar-toggler .top-bar {
   margin-top: 0px;
@@ -242,9 +244,6 @@ nav.navbar.transparent {
   transform: rotate(0deg);
 }
 
-.navbar .collapse {
-  padding-right: 2000px;
-}
 
 .nav-item{
   text-align: center;
@@ -291,7 +290,6 @@ nav.navbar.transparent {
 }
 
 .nav-icon{
-  float:inherit;
   font-size: 1.5rem;
   padding: 3px;
   color: var(--cutltured);
@@ -362,26 +360,44 @@ nav.navbar.transparent {
 section {
   background-attachment:initial;
 }
-
+.navbar-brand.transparent {
+  margin-right: 0em;
+}
+.navbar-brand-text{
+text-align: right;
+margin: 15px;
+}
 .navbar-text {
   float: right;
 }
 .navbar-brand {
-  float: right;
+  position: relative;
+  float: none;
+  margin-left: 15px;
 }
 
+.nav-icon{
+  padding: 0px;
+}
 div{position:relative;}
 }
-.navbar-brand {
-  float: left;
-}
-
 /*fix for collapsed menu on small width protrait screens */
 @media (max-width:767px) {
-  .navbar-brand-text {
+.navbar-brand > img {
+  position: relative;
+  float:left;
+}
+
+.navbar-toggler {
+    margin: auto;
+    padding: auto;
+}
+
+ .navbar-brand-text {
+   text-align: center;
     padding: 0px 15px 0px 15px;
   }
-.nav-link {
+ .nav-link {
   font-family:Arial, Helvetica, sans-serif;
   font-weight: 400;
   letter-spacing: 4px;
@@ -393,8 +409,8 @@ div{position:relative;}
   position: relative;
   display: block;
   text-decoration: none;
-}
-.nav-link:after {
+ }
+ .nav-link:after {
   position: absolute;
   color: var(--cutltured);
   content: "";
@@ -406,8 +422,8 @@ div{position:relative;}
   transition: transform 0.1s;
   transform: scaleX(0);
   transform-origin: top;
-}
-.nav-link:hover{
+ }
+ .nav-link:hover{
   text-decoration-color: var(--brightfuckingred);
   color: var(--cutltured);
 }
@@ -416,6 +432,10 @@ div{position:relative;}
   transform: scaleX(.20);
   transform-origin: bottom;
 }
+.navbar-nav {
+  margin:auto;
+}
+
 .nav-icons {
   text-align: center;
 }
