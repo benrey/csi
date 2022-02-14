@@ -88,9 +88,6 @@ background-image: url(../img/work/4.jpg), url(../img/work/4.jpg);
 h1{
     color:var(--richBlack);
 }
-.d-flex {
-  max-width: 1320px;
-}
 nav.navbar {
   -webkit-transition: all 0.4s ease !important;
   margin: auto;
