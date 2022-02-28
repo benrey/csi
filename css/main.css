@@ -89,6 +89,7 @@ nav.navbar {
   background-color:rgba(0,0,0,0) !important;
   max-width: 1320px;
   padding-top: 10px !important;
+
 }
 .container-fluid {
   width: 100%;
@@ -101,8 +102,9 @@ nav.navbar {
   padding-right: 0px !important;
   padding-left: 0px !important;
   width: 100% !important;
-  height: 10vh !important;
+  height: 12vh !important;
   position: fixed;
+  z-index: 999;
 }
 
 .navbar-brand { 
@@ -172,7 +174,7 @@ nav.navbar {
   width: 100%;
   padding: 0rem;
   background: var(--cutltured,0.4);
-  z-index: 100;
+  z-index: 999;
 
 }
 .navbar-icon{
