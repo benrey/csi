@@ -26,6 +26,7 @@ function checkSize(){
   if ($(".navbar-nav").css("flex-direction") == "row" ) {
     $('con').removeClass('height');
     $('.navbar-collapse').removeClass('show');
+    $('.navbar-toggler').addClass('collapsed');
   }
 }
 

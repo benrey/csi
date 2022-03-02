@@ -88,11 +88,11 @@ nav.navbar {
   margin: auto;
   background-color:rgba(0,0,0,0) !important;
   max-width: 1320px;
-  padding-top: 10px !important;
+  padding-top: 30px !important;
 }
 .container-fluid.height.transparent {
   top: 0px;
-  height: 32vh!important;
+  height: 34vh!important;
 }
 .container-fluid {
   top: 0px;
@@ -102,19 +102,17 @@ nav.navbar {
 }
 .container-fluid.transparent {
   background-color: #222 !important;
-  -webkit-transition: all .5s ease-in-out !important;
+  -webkit-transition: all .3s ease-in-out !important;
   padding-right: 0px !important;
   padding-left: 0px !important;
   width: 100% !important;
-  height: 12vh !important;
+  height: 14vh !important;
   position: fixed;
   z-index: 999;
 }
 
 
 .navbar-brand { 
-  overflow: visible;
-  width: 20px;
   float: left;
 }
 .navbar-brand>img {
@@ -130,10 +128,8 @@ nav.navbar {
 .navbar-brand-text {
   font-size: 1.4em;
   letter-spacing: 3px;
-  margin-bottom: .25em;
   color: var(--cutltured);
   position: relative;
-  display: block;
   text-decoration: none;
   font-weight: 300;
   text-transform: capitalize;
@@ -366,27 +362,26 @@ nav.navbar {
 }
 
 /*fix for collapsed menu on small width protrait screens */
-@media screen and (min-width:0px) and (max-width:900px) {
+@media screen and (min-width:0px) and (max-width:774px) {
  nav.navbar {
-  max-width: 450px;
+  max-width: 400px;
+ }
+ .navbar-brand {
+
  }
  .navbar-brand > img {
-  position: relative;
-  float:left;
+  margin: 0px 0px 0px 0px;
  }
 
  .navbar-toggler {
-    margin: auto;
     padding: auto;
  }
 
  .navbar-brand-text {
-   text-align: center;
-    padding: 0px 0px 0px 20px;
   }
  .nav-link {
   font-family:Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 420;
   letter-spacing: 4px;
   font-size: .55em;
   padding: 0px 0px;
@@ -423,6 +418,7 @@ nav.navbar {
    margin:auto;
   }
 
+
  .nav-icons {
   text-align: center;
  }
@@ -455,11 +451,55 @@ nav.navbar {
   padding-top: 0px;
 }
 }
+/*fix for screen sizes */
+@media screen and (min-width: 775px) and (max-width:1100px) {
+  nav.navbar {
+    margin: 0 30px 0 30px;
+   }
+   navbar-brand >img{
+     margin: auto;
+     position:fixed;
+   }
+   .navbar-brand {
+    position: fixed;
+  }
+   .navbar-brand-text{
+    width:100%;
+    text-align: center;
+   }
+
+
+   .container-fluid.transparent {
+    background-color: #222 !important;
+    -webkit-transition: all .3s ease-in-out !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    width: 100% !important;
+    height: 20vh !important;
+    position: fixed;
+    z-index: 999;
+  }
+   
+   .nav-icon{
+     padding: 0px;
+   }
+   div{
+     position:relative;
+   }
+   .jumbotron {
+     padding-top: 3.8em;
+     color: var(--cutltured);
+     max-width: 920px;
+   }
+ }
 
 /*fix for screen sizes */
-@media screen and (min-width:900px) and (max-width:1100px) {
+@media screen and (min-width:1100px) and (max-width:1300px) {
     nav.navbar {
-     max-width: 950px;
+     max-width: 1000px;
+    }
+    navbar-brand >img{
+      margin: 0 0 0 0;
     }
     .navbar-brand.transparent {
       margin-right: 0em;
