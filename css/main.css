@@ -89,9 +89,13 @@ nav.navbar {
   background-color:rgba(0,0,0,0) !important;
   max-width: 1320px;
   padding-top: 10px !important;
-
+}
+.container-fluid.height.transparent {
+  top: 0px;
+  height: 32vh!important;
 }
 .container-fluid {
+  top: 0px;
   width: 100%;
   opacity: 1;
   background-color:rgba(0,0,0,0);
@@ -106,6 +110,7 @@ nav.navbar {
   position: fixed;
   z-index: 999;
 }
+
 
 .navbar-brand { 
   overflow: visible;
@@ -310,14 +315,14 @@ nav.navbar {
 
 .jumbotron {
   padding-top: 3.8em;
-  color: var(--cutltured)
+  color: var(--cutltured);
+  max-width: 1320px;
 }
 .jumbotron .container-xxl,.jumbotron h1{
   padding-top: 50vh;
   color:var(--cutltured);
   font-family: 'Merriweather', serif;
   font-size: 2em;
-  max-width: 1320px;
  }
  .jumbotron h2 {
   font-size: 1.7em;
@@ -360,44 +365,20 @@ nav.navbar {
   font-size: .65em;
 }
 
-
-/*fix for screen sizes */
-@media (max-width:1420px), screen and (orientation:portrait) {
-section {
-  background-attachment:initial;
-}
-.navbar-brand.transparent {
-  margin-right: 0em;
-}
-.navbar-brand-text{
-text-align: right;
-margin: 15px;
-}
-.navbar-text {
-  float: right;
-}
-.navbar-brand {
-  position: relative;
-  float: none;
-  margin-left: 15px;
-}
-
-.nav-icon{
-  padding: 0px;
-}
-div{position:relative;}
-}
 /*fix for collapsed menu on small width protrait screens */
-@media (max-width:767px) {
-.navbar-brand > img {
+@media screen and (min-width:0px) and (max-width:900px) {
+ nav.navbar {
+  max-width: 450px;
+ }
+ .navbar-brand > img {
   position: relative;
   float:left;
-}
+ }
 
-.navbar-toggler {
+ .navbar-toggler {
     margin: auto;
     padding: auto;
-}
+ }
 
  .navbar-brand-text {
    text-align: center;
@@ -416,53 +397,54 @@ div{position:relative;}
   display: block;
   text-decoration: none;
  }
- .nav-link:after {
-  position: absolute;
-  color: var(--cutltured);
-  content: "";
-  width: 65%;
-  height: 3px;
-  top: 100%;
-  left: 17%;
-  background: var(--brightfuckingred);
-  transition: transform 0.1s;
-  transform: scaleX(0);
-  transform-origin: top;
- }
- .nav-link:hover{
-  text-decoration-color: var(--brightfuckingred);
-  color: var(--cutltured);
-}
+  .nav-link:after {
+   position: absolute;
+   color: var(--cutltured);
+   content: "";
+   width: 65%;
+   height: 3px;
+   top: 100%;
+   left: 17%;
+   background: var(--brightfuckingred);
+   transition: transform 0.1s;
+   transform: scaleX(0);
+   transform-origin: top;
+  }
+  .nav-link:hover{
+   text-decoration-color: var(--brightfuckingred);
+   color: var(--cutltured);
+  }
 
-.nav-link:hover::after {
-  transform: scaleX(.20);
-  transform-origin: bottom;
-}
-.navbar-nav {
-  margin:auto;
-}
+  .nav-link:hover::after {
+   transform: scaleX(.20);
+   transform-origin: bottom;
+  }
+  .navbar-nav {
+   margin:auto;
+  }
 
-.nav-icons {
+ .nav-icons {
   text-align: center;
-}
-.jumbotron .container-xxl, .jumbotron h1{
+ }
+ .jumbotron .container-xxl, .jumbotron h1{
   padding-top: 40vh;
   color:var(--cutltured);
   font-family: 'Merriweather', serif;
   font-size: 1.35em;
-}
-.container-xxl h2{
+  margin: auto;
+ }
+ .container-xxl h2{
   text-align: left !important;
-}
-.jumbotron h2 {
+ }
+ .jumbotron h2 {
   font-size: 1.35em;
   text-align: left;
-}
+ }
 .jumbotron p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: .7em;
-  max-width: 575px;
-}
+  margin: auto;
+ }
 .push{
   transition: ease-in-out all .2s;
   padding-top: 202px;
@@ -471,4 +453,39 @@ div{position:relative;}
 .pushUp{
   transition: ease-in-out all .2s;
   padding-top: 0px;
+}
+}
+
+/*fix for screen sizes */
+@media screen and (min-width:900px) and (max-width:1100px) {
+    nav.navbar {
+     max-width: 950px;
+    }
+    .navbar-brand.transparent {
+      margin-right: 0em;
+    }
+    .navbar-brand-text{
+    text-align: right;
+    margin: 15px;
+    }
+    .navbar-text {
+      float: right;
+    }
+    .navbar-brand {
+      position: relative;
+      float: none;
+      margin-left: 15px;
+    }
+    
+    .nav-icon{
+      padding: 0px;
+    }
+    div{
+      position:relative;
+    }
+    .jumbotron {
+      padding-top: 3.8em;
+      color: var(--cutltured);
+      max-width: 920px;
+    }
 }
