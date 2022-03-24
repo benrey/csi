@@ -74,42 +74,45 @@ background-image: url(../img/work/4.jpg), url(../img/work/4.jpg);
       background-image: url(../img/work/53.jpg), url(../img/work/4.jpg)
     }
   }
-.header {
-  max-width: 100%;
-  max-height: 100%;
-  right:0;
-  left:0;
+#header {
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 92px;
+  padding-top: 100px;
+  z-index: 99;
 }
-h1{
-    color:var(--richBlack);
+#header.visiblebg {
+  background-color: #222;
 }
-
-nav.navbar {
-  margin: auto;
-  background-color:rgba(0,0,0,0) !important;
-  max-width: 1320px;
-  padding-top: 30px !important;
-}
-.container-fluid.height.transparent {
-  top: 0px;
-  height: 34vh!important;
+.container-fluid.height.visiblebg {
+  height: 50%;
 }
 .container-fluid {
-  top: 0px;
+  display:block;
+  height: 50%;
   width: 100%;
   opacity: 1;
   background-color:rgba(0,0,0,0);
 }
-.container-fluid.transparent {
-  background-color: #222 !important;
-  -webkit-transition: all .3s ease-in-out !important;
-  padding-right: 0px !important;
-  padding-left: 0px !important;
-  width: 100% !important;
-  height: 14vh !important;
-  position: fixed;
-  z-index: 999;
+.container-fluid.visiblebg {
+  background-color: #222;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 100%;
+  height: 50%;
 }
+nav.navbar {
+  margin: auto;
+  background-color:rgba(0,0,0,0);
+  max-width: 1320px;
+  padding-top: 30px;
+}
+
 
 
 .navbar-brand { 
@@ -118,7 +121,7 @@ nav.navbar {
 .navbar-brand>img {
   max-height: 40px;
   max-width: 40px;
-  float: right;
+  float: left;
 }
 
 .navbar-brand:hover {
@@ -131,11 +134,11 @@ nav.navbar {
   color: var(--cutltured);
   position: relative;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 365;
   text-transform: capitalize;
 }
   
-}
+
 .navbar-brand-text:after {
   position: absolute;
   color: var(--cutltured);
@@ -161,7 +164,7 @@ nav.navbar {
   transform-origin: bottom;
 }
 
-}
+
 .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
@@ -175,8 +178,6 @@ nav.navbar {
   width: 100%;
   padding: 0rem;
   background: var(--cutltured,0.4);
-  z-index: 999;
-
 }
 .navbar-icon{
   font-size: 1.25em;
@@ -261,7 +262,7 @@ nav.navbar {
   margin: 0px;
 }
 .nav-link {
-  font-weight: 100;
+  font-weight: 150;
   letter-spacing: 2px;
   font-size: .9em;
   padding: 4px 0px;
@@ -313,13 +314,19 @@ nav.navbar {
   padding-top: 3.8em;
   color: var(--cutltured);
   max-width: 1320px;
+  margin:auto;
+  
 }
-.jumbotron .container-xxl,.jumbotron h1{
+.jumbotron .container-xxl,.jumbotron h1 {
   padding-top: 50vh;
   color:var(--cutltured);
   font-family: 'Merriweather', serif;
   font-size: 2em;
  }
+ .container-fluid h1, h2, p{
+  opacity: 0;
+ }
+ 
  .jumbotron h2 {
   font-size: 1.7em;
  }
@@ -330,15 +337,15 @@ nav.navbar {
 
 
 .feature.card {
-  padding: 1em;
+  padding: .2em;
   background-color: var(--greyBlack);
+  opacity: 1;
 }
 .feature.card h3{
   font-family: 'Roboto';
   letter-spacing: 2px;
   font-size: .55em;
   font-weight: 300;
-  font-display:
 }
 
 .featurefbhref>img{
@@ -362,23 +369,20 @@ nav.navbar {
 }
 
 /*fix for collapsed menu on small width protrait screens */
-@media screen and (min-width:0px) and (max-width:774px) {
+@media screen and (min-width:320px) and (max-width:896px) {
  nav.navbar {
   max-width: 400px;
- }
- .navbar-brand {
-
  }
  .navbar-brand > img {
   margin: 0px 0px 0px 0px;
  }
+.container-fluid.height.visiblebg {
+  height: 22vh;
+}
 
  .navbar-toggler {
     padding: auto;
  }
-
- .navbar-brand-text {
-  }
  .nav-link {
   font-family:Arial, Helvetica, sans-serif;
   font-weight: 420;
@@ -424,10 +428,14 @@ nav.navbar {
  }
  .jumbotron .container-xxl, .jumbotron h1{
   padding-top: 40vh;
+  max-width: 400px;
   color:var(--cutltured);
   font-family: 'Merriweather', serif;
   font-size: 1.35em;
   margin: auto;
+ }
+ .container-fluid h1, h2, p{
+  opacity: 0;
  }
  .container-xxl h2{
   text-align: left !important;
@@ -441,6 +449,24 @@ nav.navbar {
   font-size: .7em;
   margin: auto;
  }
+ 
+.feature.card {
+  padding: .2em;
+  background-color: var(--greyBlack);
+  margin: .2em;
+}
+.feature.card h3{
+  font-family: 'Roboto';
+  letter-spacing: 2px;
+  font-size: .55em;
+  font-weight: 300;
+}
+
+.featurefbhref>img{
+    max-height: 40px;
+    max-width: 40px;
+    float: center;
+}
 .push{
   transition: ease-in-out all .2s;
   padding-top: 202px;
@@ -454,37 +480,29 @@ nav.navbar {
 /*fix for screen sizes */
 @media screen and (min-width: 775px) and (max-width:1100px) {
   nav.navbar {
-    margin: 0 30px 0 30px;
-   }
-   navbar-brand >img{
-     margin: auto;
-     position:fixed;
-   }
-   .navbar-brand {
-    position: fixed;
-  }
-   .navbar-brand-text{
-    width:100%;
-    text-align: center;
+    float: right;
+    max-width: 850px;
    }
 
+   .navbar-brand-text {
+     font-size: 1.2em;
+   }
+   .nav-item {
+    padding-top: 7px;
+    font-size: 1em;
+   }
+   .navbar-collapse {
+    flex-grow: unset;
+   }
+   .navbar-expand-md, .navbar-nav, .nav-link {
+     padding: 0 5px 0 5px;
+     margin: 0px 0px 0px 0px;
+     margin-right: 0px;
+   }
 
-   .container-fluid.transparent {
-    background-color: #222 !important;
-    -webkit-transition: all .3s ease-in-out !important;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    width: 100% !important;
-    height: 20vh !important;
-    position: fixed;
-    z-index: 999;
-  }
-   
+  
    .nav-icon{
      padding: 0px;
-   }
-   div{
-     position:relative;
    }
    .jumbotron {
      padding-top: 3.8em;
@@ -497,9 +515,9 @@ nav.navbar {
 @media screen and (min-width:1100px) and (max-width:1300px) {
     nav.navbar {
      max-width: 1000px;
-    }
-    navbar-brand >img{
-      margin: 0 0 0 0;
+    }   
+    .navbar-brand >img{
+      float:left;
     }
     .navbar-brand.transparent {
       margin-right: 0em;
@@ -511,12 +529,6 @@ nav.navbar {
     .navbar-text {
       float: right;
     }
-    .navbar-brand {
-      position: relative;
-      float: none;
-      margin-left: 15px;
-    }
-    
     .nav-icon{
       padding: 0px;
     }

@@ -1,10 +1,13 @@
-$(window).scroll(function() {
+// You can also use <link> for styles
+// ..
+
+$(window).scroll(function () {
   if ($(document).scrollTop() > 20) {
-    $('nav').addClass('transparent');
-    $('con').addClass('transparent')
+    $('header').addClass('visiblebg');
+    $('con').addClass('visiblebg')
   } else {
-    $('nav').removeClass('transparent');
-    $('con').removeClass('transparent');
+    $('header').removeClass('visiblebg');
+    $('con').removeClass('visiblebg');
   }
 });
 $('.navbar-collapse').on('show.bs.collapse', function (e) {
@@ -30,6 +33,13 @@ function checkSize(){
   }
 }
 
+$(document).ready(function () {
+  $('.container-fluid h1').delay(3500).fadeTo(500, 1);
+  $('.container-fluid h2').delay(4750).fadeTo(500, 1);
+  $('.container-fluid p').delay(5500).fadeTo(500, 1);
+  $('.feature').delay(2000).fadeTo(500, 1);
+});
+
 
 var icon = document.getElementsByClassName("icon-bars");
 var pushDown = document.getElementById("push");
@@ -44,3 +54,8 @@ $(document).ready(function(){
     }
   })
 });
+
+AOS.init({
+  duration: 1200,
+  easing: 'ease-in-out-back'
+})
