@@ -28,13 +28,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../img/work/4.jpg);
+  background-image: url(../img/work/19.jpg);
+  height: 148vh; /*had to add this in order to get the background to stretch past the footer after adding relative position to footer*/
 }
 
 #slideShow{
 width:100%;
 height: 100%;
-overflow-x:hidden;
 background-attachment: cover;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -49,17 +49,17 @@ backface-visibility: hidden;
 -o-animation: slideShow ease-in-out 25s both infinite;
 animation: slideShow ease-in-out 25s both infinite;
 background-repeat: no-repeat;
-background-image: url(../img/work/4.jpg), url(../img/work/4.jpg);
+background-image: url(../img/work/19.jpg), url(../img/work/19.jpg);
 }
 @keyframes slideShow{
     0% {
-      background-image: url(../img/work/4.jpg), url(../img/work/4.jpg)
+      background-image: url(../img/work/19.jpg), url(../img/work/19.jpg)
     }
     10%{
-      background-image: url(../img/work/4.jpg), url(../img/work/19.jpg)
+      background-image: url(../img/work/19.jpg), url(../img/work/4.jpg)
     }
     30%{
-      background-image: url(../img/work/19.jpg), url(../img/work/71.jpg)
+      background-image: url(../img/work/4.jpg), url(../img/work/71.jpg)
     }
     40%{
       background-image: url(../img/work/71.jpg), url(../img/work/55.jpg)
@@ -68,10 +68,10 @@ background-image: url(../img/work/4.jpg), url(../img/work/4.jpg);
       background-image: url(../img/work/55.jpg), url(../img/work/69.jpg)
     }
     70% {
-      background-image: url(../img/work/69.jpg), url(../img/work/53.jpg)
+      background-image: url(../img/work/69.jpg), url(../img/work/19.jpg)
     }
     100% {
-      background-image: url(../img/work/53.jpg), url(../img/work/4.jpg)
+      background-image: url(../img/work/19.jpg), url(../img/work/19.jpg)
     }
   }
 #header {
@@ -252,7 +252,6 @@ nav.navbar {
   transform: rotate(0deg);
 }
 
-
 .nav-item{
   text-align: center;
 }
@@ -261,6 +260,7 @@ nav.navbar {
   padding: 0px;
   margin: 0px;
 }
+
 .nav-link {
   font-weight: 150;
   letter-spacing: 2px;
@@ -273,7 +273,6 @@ nav.navbar {
   display: block;
   text-decoration: none;
 }
-
 .nav-link:after {
   position: absolute;
   color: var(--cutltured);
@@ -291,7 +290,6 @@ nav.navbar {
   text-decoration-color: var(--brightfuckingred);
   color: var(--cutltured);
 }
-
 .nav-link:hover::after {
   transform: scaleX(1);
   transform-origin: bottom;
@@ -315,7 +313,6 @@ nav.navbar {
   color: var(--cutltured);
   max-width: 1320px;
   margin:auto;
-  
 }
 .jumbotron .container-xxl,.jumbotron h1 {
   padding-top: 50vh;
@@ -323,10 +320,12 @@ nav.navbar {
   font-family: 'Merriweather', serif;
   font-size: 2em;
  }
+ .jumbotron .list {
+  tx
+ }
  .container-fluid h1, h2, p{
   opacity: 0;
  }
- 
  .jumbotron h2 {
   font-size: 1.7em;
  }
@@ -335,27 +334,29 @@ nav.navbar {
    max-width: 575px;
  }
 
-
+#features {
+  opacity: 0;
+  margin-top: 1vh;
+}
 .feature.card {
-  padding: .2em;
   background-color: var(--greyBlack);
-  opacity: 1;
 }
 .feature.card h3{
+  margin-top: 2vh;
   font-family: 'Roboto';
   letter-spacing: 2px;
   font-size: .55em;
   font-weight: 300;
 }
-
 .featurefbhref>img{
     max-height: 40px;
-    max-width: 40px;
     float: center;
 }
 
 .footer .container {
   max-width: 1320px;
+  height: 2.5rem;
+  bottom: 0;
 }
 .footerCerakotehref>img{
   max-height: 200px;
@@ -451,9 +452,7 @@ nav.navbar {
  }
  
 .feature.card {
-  padding: .2em;
   background-color: var(--greyBlack);
-  margin: .2em;
 }
 .feature.card h3{
   font-family: 'Roboto';

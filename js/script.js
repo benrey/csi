@@ -34,10 +34,10 @@ function checkSize(){
 }
 
 $(document).ready(function () {
-  $('.container-fluid h1').delay(3500).fadeTo(500, 1);
-  $('.container-fluid h2').delay(4750).fadeTo(500, 1);
-  $('.container-fluid p').delay(5500).fadeTo(500, 1);
-  $('.feature').delay(2000).fadeTo(500, 1);
+  $('.container-fluid h1').delay(1500).fadeTo(500, 1);
+  $('.container-fluid h2').delay(1750).fadeTo(500, 1);
+  $('.container-fluid p').delay(2500).fadeTo(500, 1);
+  $('#features').delay(500).fadeTo(2000, 1);
 });
 
 
