@@ -29,7 +29,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url(../img/work/19.jpg);
-  height: 148vh; /*had to add this in order to get the background to stretch past the footer after adding relative position to footer*/
+  /*height: 148vh; /*had to add this in order to get the background to stretch past the footer after adding relative position to footer*/
 }
 
 #slideShow{
@@ -299,7 +299,7 @@ nav.navbar {
   margin:auto;
 }
 .jumbotron .container-xxl,.jumbotron h1 {
-  padding-top: 50vh;
+  padding-top: 47vh;
   color:var(--cutltured);
   font-family: 'Merriweather', serif;
   font-size: 2em;
@@ -323,20 +323,31 @@ nav.navbar {
 #features {
   opacity: 0;
   margin-top: 1vh;
-  margin-right: 0;
 }
-
+.feature.col{
+  width: 34%;
+}
+.bulletHover{
+  width: 20px;
+  background: #4e4e4e;
+  border-radius: 10px;
+}
+td:greater2x {
+  content: '>>';
+}
 .feature .card {
+  justify-content:unset;
   background-color: var(--greyBlack);
   text-decoration: none;
-  width: 85%;
-  margin-left: 20px;
+  margin-left: 50px;
 }
+
 .feature .row {
   justify-content:center;
 }
 
 .feature h3{
+  margin-inline-start: 5em;
   padding-top: 7vh;
   margin-bottom: 25px;
   font-family: 'Space Grotesk', sans-serif;
@@ -371,6 +382,10 @@ nav.navbar {
 .feature a:link {
   text-decoration: none;
  }
+
+.feature.container {
+  display: flex;
+ }
 .footer .container {
   max-width: 1320px;
   height: 2.5rem;
@@ -393,6 +408,17 @@ nav.navbar {
   display: table-cell;
   width: 30%;
 }
+ul.bullets {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  font-size:.75em;
+  list-style-type: none;
+}
+ul.bullets span{
+  padding: 0 20px 20px 0;
+}
+
 /*fix for collapsed menu on small width protrait screens */
 @media screen and (min-width:320px) and (max-width:896px) {
  nav.navbar {
@@ -446,8 +472,8 @@ nav.navbar {
    margin:auto;
   }
  .nav-icons {
-  text-align: center;
- }
+    text-align: center;
+  }
  .jumbotron .container-xxl, .jumbotron h1{
   padding-top: 65vh;
   max-width: 500px;
@@ -479,15 +505,25 @@ nav.navbar {
 .feature h3 {
   padding-top: 3vh;
 }
-.feature .card h3{
+.feature.container {
+  flex: 1 1 auto;
+}
+.feature.card {
+  width: 500px;
+  column-count: 2;
+}
+.feature.card h3{
   font-family: 'Roboto';
   letter-spacing: 2px;
   font-size: .35em;
   font-weight: 300;
 }
 .feature .list {
-  border-bottom:#aeaeae;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
 }
+
 .featurefbhref>img{
     max-height: 40px;
     max-width: 40px;
@@ -531,8 +567,8 @@ nav.navbar {
      color: var(--cutltured);
      max-width: 920px;
    }
-  }
 }
+
 
 /*fix for screen sizes */
 @media screen and (min-width:1100px) and (max-width:1300px) {
@@ -563,5 +599,4 @@ nav.navbar {
       color: var(--cutltured);
       max-width: 920px;
     }
-  }
 }

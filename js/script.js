@@ -10,15 +10,80 @@ $(window).scroll(function () {
     $('con').removeClass('visiblebg');
   }
 });
+
 $('.navbar-collapse').on('show.bs.collapse', function (e) {
   $('con').addClass('height');
 })
 $('.navbar-collapse').on('hide.bs.collapse', function (e) {
   $('con').removeClass('height');
 })
+
 $(document).ready(function() {
   // run test on initial page load
-  checkSize();
+  $('.container-fluid h1').delay(1000).fadeTo(1000, 1);
+  $('.container-fluid h2').delay(1200).fadeTo(1000, 1);
+  $('.container-fluid p').delay(1500).fadeTo(1000, 1);
+  $('#features').delay(1600).fadeTo(2000, 1);
+  $(icon[0]).click(function(){
+    if($(pushDown).hasClass("push")){
+      pushDown.className = "pushUp";
+    }
+    else{
+      pushDown.className = "push";
+    }
+  })
+  
+ //capabilities jquery script start
+
+  var slider = $('.slideshow');
+  slider.slick({
+      infinite: true,
+      slidesToShow: 1,
+      autoplay: false,
+      autoplaySpeed: 5000,
+      speed: 300,
+      fade: true,
+      adaptiveHeight: true,
+      dots: false,
+      arrows: false,
+      pauseOnHover: true,
+      pauseOnFocus: true
+  }).slick("slickPause");
+  
+  setTimeout(function() {
+      slider.slick("slickPlay");
+  }, 3000);
+
+  // pause slideshow on hover
+  $('.box').hover(
+      function() {
+          slider.slick("slickPause");
+      },
+      function() {
+          slider.slick("slickPlay");
+      }
+  );
+  
+  // change slide on nav hover
+  $('.box li').hoverIntent(function(e) {
+      e.preventDefault();
+      var num = $(this).data('num');
+      
+      slider.slick('slickGoTo', parseInt(num));
+
+      $('.box li.active').removeClass('active');
+      $(this).addClass('active');
+  });
+
+  // change nav on slide change
+  $('.slideshow').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+      $('.box li.active').removeClass('active');
+      $('.box ul.desktop li[data-num=' + nextSlide + ']').addClass('active');
+  });
+  
+//capabilities jquery script end
+
+checkSize();
 
   // run test on resize of the window
   $(window).resize(checkSize);
@@ -33,36 +98,10 @@ function checkSize(){
   }
 }
 
-$(document).ready(function () {
-  $('.container-fluid h1').delay(1500).fadeTo(500, 1);
-  $('.container-fluid h2').delay(1750).fadeTo(500, 1);
-  $('.container-fluid p').delay(2500).fadeTo(500, 1);
-  $('#features').delay(500).fadeTo(2000, 1);
-});
-
-
 var icon = document.getElementsByClassName("icon-bars");
 var pushDown = document.getElementById("push");
-
-$(document).ready(function(){
-  $(icon[0]).click(function(){
-    if($(pushDown).hasClass("push")){
-      pushDown.className = "pushUp";
-    }
-    else{
-      pushDown.className = "push";
-    }
-  })
-});
-
-$('.autoplay').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-});
-
 AOS.init({
   duration: 1200,
   easing: 'ease-in-out-back'
 })
+AOS.refresh();
