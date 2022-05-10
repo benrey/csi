@@ -24,12 +24,12 @@ $(document).ready(function () {
   $('.container-fluid h2').delay(1200).fadeTo(1000, 1);
   $('.container-fluid p').delay(1500).fadeTo(1000, 1);
   $('.hidden').hide();
-  $("ul li").hover(function () {
-    $(this).find('.show').hide();
-    $(this).find('.hidden').show();
+  $('.bullets li').hover(function () {
+    $(this).find('.show').stop(true, true).hide();
+    $(this).find('.hidden').fadeIn(1200);
   }, function () {
-    $(this).find('.show').show();
-    $(this).find('.hidden').hide();
+    $(this).find('.show').fadeIn(1200);
+    $(this).find('.hidden').stop(true, true).hide();
   });
   
   
@@ -91,7 +91,7 @@ $(document).ready(function () {
   }, 3000);
 
   // pause slideshow on hover
-  $('.box').hover(
+  $('.bullets').hover(
       function() {
           slider.slick("slickPause");
       },
@@ -101,22 +101,25 @@ $(document).ready(function () {
   );
   
   // change slide on nav hover
-  $('.box li').hoverIntent(function(e) {
+  $('.bullets li').hoverIntent(function(e) {
       e.preventDefault();
       var num = $(this).data('num');
-      
       slider.slick('slickGoTo', parseInt(num));
-
-      $('.box li.active').removeClass('active');
+      $('.bullets li.active').removeClass('active');
       $(this).addClass('active');
-  });
+
+   });
 
   // change nav on slide change
-  $('.slideshow').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-      $('.box li.active').removeClass('active');
-      $('.box ul.desktop li[data-num=' + nextSlide + ']').addClass('active');
+  $('.slideshow').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+      $('.bullets li.active').removeClass('active');
+      $('.bullets li[data-num=' + nextSlide + ']').addClass('active');
+      $('.bullets span.active').removeClass('.show').stop(true, true).hide();
+      $('.bullets span.active').addClass('.hidden').fadeIn(1200);
+      $('.bullets li')
+    
   });
-  
+
 //capabilities jquery script end
 
 checkSize();
@@ -136,8 +139,5 @@ function checkSize(){
 
 var icon = document.getElementsByClassName("icon-bars");
 var pushDown = document.getElementById("push");
-AOS.init({
-  duration: 1200,
-  easing: 'ease-in-out-back'
-})
+
 AOS.refresh();

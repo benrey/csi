@@ -22,37 +22,26 @@
 *::after {
  box-sizing:border-box;
 }
-body:not(.loaded) #sliderShow img {
-  display:none;
-}
-body {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url(../img/work/19.jpg);
-  /*height: 148vh; /*had to add this in order to get the background to stretch past the footer after adding relative position to footer*/
-}
 
-#slideShow{
-width:100%;
-height: 100%;
+body{
+overflow-x:hidden;
+margin:0;
+padding:0;
+width: 100%;
 background-attachment: cover;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
-background-size: cover;
 background-position: center center;
 background-size: cover;
-backface-visibility: hidden;
--webkit-backface-visibility: hidden;
--webkit-animation: slideShow ease-in-out 25s both infinite;
--moz-animation: slideShow ease-in-out 25s both infinite;
--o-animation: slideShow ease-in-out 25s both infinite;
-animation: slideShow ease-in-out 25s both infinite;
+-webkit-animation: slideShows ease-in-out 25s both infinite;
+-moz-animation: slideShows ease-in-out 25s both infinite;
+-o-animation: slideShows ease-in-out 25s both infinite;
+animation: slideShows ease-in-out 25s both infinite;
 background-repeat: no-repeat;
 background-image: url(../img/work/19.jpg), url(../img/work/19.jpg);
 }
-@keyframes slideShow{
+@keyframes slideShows{
     0% {
       background-image: url(../img/work/19.jpg), url(../img/work/19.jpg)
     }
@@ -92,7 +81,7 @@ background-image: url(../img/work/19.jpg), url(../img/work/19.jpg);
   height: 100%;
 }
 .container-fluid {
-  display:block;
+  display:inline-block;
   width: 100%;
   opacity: 1;
   background-color:rgba(0,0,0,0);
@@ -326,7 +315,7 @@ nav.navbar {
 }
 
 .bulletHover{
-  width: 20px;
+  width: 10px;
   background: #4e4e4e;
   border-radius: 10px;
   -webkit-transition: color 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
@@ -339,7 +328,9 @@ nav.navbar {
   justify-content:unset;
   background-color: var(--eerieBlack);
   text-decoration: none;
-  margin-left: 0px;
+  margin-left: -50px;
+  border-radius: 50px 20px 50px 20px;
+  padding-bottom: 30px;
 }
 
 .feature .row {
@@ -361,7 +352,7 @@ nav.navbar {
 .feature .capa {
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-size: .40em;
   font-weight: 300;
 }
@@ -376,7 +367,7 @@ nav.navbar {
   font-weight: var(--bold);
 }
 .feature .num{
-  width:5%;
+  width:2%;
 }
 .feature .col-4 {
   text-align:left;
@@ -395,21 +386,36 @@ nav.navbar {
  .bullets li:hover {
    text-decoration: none;
  }
- 
+ .feature li {
+   transition: all 1.5s ease-out;
+   padding: 2px 0px 2px 0px;
+ }
+
  .feature li:hover {
+  transition: all 1s ease-in;
+  -webkit-transition: all 1s ease-in;
   text-decoration: none;
-  color:#e9e5e5;
   border-radius: 10px 10px 10px 10px;
   background: var(--grey);
   background-position: right bottom;
  }
- .feature ul a:hover {
+
+ .active {
+ transition: all 1s ease-in;
+ -webkit-transition: all 1s ease-in;
+ text-decoration: none;
+ border-radius: 10px 10px 10px 10px;
+ background: var(--grey);
+ background-position: right bottom;
+}
+
+ .feature ul a:hover {  
   text-decoration: none;
   color:#eeeeee;
  }
  ul.bullets span {
   color: #6c6c6c;
-  margin-left: 20px;
+  margin-left: 15px;
  }
  ul.bullets {
   height: 5em;
@@ -427,18 +433,20 @@ nav.navbar {
 }
 ul.bullets .hidden {
     display:inline-flex;
-    margin: 0 10px 0 8px;
+    -webkit-transform:scale(.35, 1.7);
+    transform: scale(.35, 1.7);
+    margin: 0 4px 0 3px;
+    color:#eaeaea;
     padding: 0;
-    font-spacing: 2px;
-    transform: scale(.65, 1.5);
+    font-spacing: .1 px;
 }
 
 ul.bullets span{
   font-family: 'Playfair Display', 'Fanwood Text', serif;
   font-style: italic;
   padding: 0 .5em 0 0;
-  margin-right: .25em;
 }
+.image{height:0;padding-top:100%;background-size:contain !important;background-position:right bottom !important;background-repeat:no-repeat !important;margin-right:-30px;}@media (min-width:768px){.block-capabilities .slideshow .image{position:absolute;bottom:0;left:0;right:0;}}@media (min-width:1024px){.block-capabilities .slideshow .image{position:relative;bottom:auto;left:auto;width:auto;margin-right:-80px;margin-top:-100px;margin-right:-7%;}}@media (min-width:1200px){.block-capabilities .slideshow .image{position:relative;bottom:auto;left:auto;width:auto;margin-right:-80px;margin-top:-100px;}}@media (min-width:1400px){.block-capabilities .slideshow .image{margin-right:-180px;}}.block-capabilities-expertise{position:relative;background-color:#faf7f0;background-repeat:no-repeat !important;background-position:bottom left !important;overflow:hidden;}
 
 .footer .container {
   max-width: 1320px;
@@ -462,9 +470,6 @@ ul.bullets span{
   display: table-cell;
   width: 30%;
 }
-
-
-
 /*fix for collapsed menu on small width protrait screens */
 @media screen and (min-width:320px) and (max-width:896px) {
  nav.navbar {
@@ -635,18 +640,6 @@ ul.bullets span{
       color: var(--cutltured);
       max-width: 920px;
     }
-
-    .arrows {
-  content: ">>"
-}
-.push{
-  transition: ease-in-out all .2s;
-  padding-top: 202px;
-}
-.pushUp{
-  transition: ease-in-out all .2s;
-  padding-top: 0px;
-}
 }
 .arrows {
   content: ">>"
@@ -654,6 +647,7 @@ ul.bullets span{
 .push{
   transition: ease-in-out all .2s;
   padding-top: 202px;
+  
 }
 .pushUp{
   transition: ease-in-out all .2s;
