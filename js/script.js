@@ -30,7 +30,23 @@ $(document).ready(function () {
   }, function () {
     $(this).find('.show').fadeIn(1200);
     $(this).find('.hidden').stop(true, true).hide();
-  });
+  })
+  // label
+  $('#section2 .label a').hover(
+    function() {
+        $(this).closest('.project-thumb').find('.img').toggleClass('hover');
+    }, function() {
+        $(this).closest('.project-thumb').find('.img').toggleClass('hover');
+    });
+
+    // image
+    $('#section2 .img').hover(
+        function() {
+            $(this).closest('.project-thumb').find('.label a').toggleClass('hover');
+        }, function() {
+            $(this).closest('.project-thumb').find('.label a').toggleClass('hover');
+    });
+;
   
   
   /*$('ul li').hover(function () {
