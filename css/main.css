@@ -77,6 +77,11 @@ background-image: url(../img/work/19.jpg), url(../img/work/19.jpg);
 #header.visiblebg {
   background-color: #222 !important;
 }
+.slick-slider {
+	display: table !important;
+	table-layout: fixed !important;
+	width: 100%;
+}
 .container-fluid.height.visiblebg {
   height: 100%;
 }
@@ -466,9 +471,13 @@ col-5 {
 }
 
 /*fix for collapsed menu on small width protrait screens */
-@media screen and (min-width:200px) and (max-width:899px) {
+@media screen and (min-width:1px) and (max-width:899px) {
+ *{
+  min-height: 0;
+  min-width: 0;
+ }
  nav.navbar {
-  max-width: 80%;
+  max-width: 90%;
  }
  .navbar-brand > img {
   margin: 0px 0px 0px 0px;
@@ -583,7 +592,7 @@ col-5 {
   width: 70%;
 }
 .col-5 {
-  width:64%;
+  width:90%;
   font-size:1.1em;
 }
 ul.bullets {
