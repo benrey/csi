@@ -23,6 +23,8 @@ $(document).ready(function () {
   $('.container-fluid h1').delay(1000).fadeTo(1000, 1);
   $('.container-fluid h2').delay(1200).fadeTo(1000, 1);
   $('.container-fluid p').delay(1500).fadeTo(1000, 1);
+  $('.card').delay(1600).fadeTo(1000, 1);
+  $('.block-capabilities h3').delay(1800).fadeTo(1000, 1);
   $('.hidden').hide();
   $('.bullets li').hover(function () {
     $(this).find('.show').stop(true, true).hide();
