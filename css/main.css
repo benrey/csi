@@ -464,17 +464,17 @@ ul.bullets span{
 col-5 {
   width: 100%
 }
+
 /*fix for collapsed menu on small width protrait screens */
-@media screen and (min-width:600px) and (max-width:899px) {
+@media screen and (min-width:200px) and (max-width:899px) {
  nav.navbar {
-  max-width: 95%;
-  justify-content: center;
+  max-width: 80%;
  }
  .navbar-brand > img {
   margin: 0px 0px 0px 0px;
  }
 .container-fluid.height.visiblebg {
-  height: 25vh;
+  height: 22vh;
 }
  .navbar-toggler {
     padding: auto;
@@ -537,7 +537,7 @@ col-5 {
  }
  .jumbotron h2 {
   font-size: 1.5em;
-  text-align: left;
+  margin-left: .5em;
  }
 .jumbotron p {
   font-family: Arial, Helvetica, sans-serif;
@@ -619,6 +619,11 @@ ul.bullets:hover {
   text-decoration: none;
   border-radius: 5px 5px 5px 5px;
   background: var(--grey);
+}
+.slick-list {
+    height: unset !important;
+    width: unset !important;
+    display:none;
 }
 }
 /*fix for screen sizes */
