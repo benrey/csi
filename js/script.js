@@ -1,5 +1,5 @@
 // You can also use <link> for styles
-// ..
+
 
 $(window).scroll(function () {
   if ($(document).scrollTop() > 20) {
@@ -8,6 +8,7 @@ $(window).scroll(function () {
   } else {
     $('header').removeClass('visiblebg');
     $('con').removeClass('visiblebg');
+    $('con').css('fade-up');
   }
 });
 
