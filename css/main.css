@@ -341,14 +341,12 @@ nav.navbar {
   margin-top: 1vh;
 }
 .feature .card {
-  overflow-y: hidden !important;/*add this.*/
   min-width: 100%;
-  position:;
   background-color: var(--eerieBlack);
   text-decoration: none;
   margin-left: -50px;
   border-radius: 0px 0px 20px 20px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .feature .row {
@@ -431,19 +429,8 @@ ul.bullets span {
   padding: 0;
   border-radius: 5px 5px 5px 5px;
   background-color: var(--grey);
-  
+  line-height: auto !important;
 }
-ul.bullets .hidden {
-  border:0px;
-  display: inline-flex;
-  align-self: flex-start;  
-  -webkit-transform:scale(.35, 1.7);
-  transform: scale(.35, 1.7);
-  margin: 0px 2.8px 0px 1.1px;
-  color:var(--white);
-  padding: 0;
-}
-
 ul.bullets span{
   font-family: 'Playfair Display', 'Fanwood Text', serif;
   font-style: italic;
@@ -463,6 +450,8 @@ ul.bullets {
   font-size:.70em;
   list-style-type: none;
 }
+
+
 .image{
   position:relative;
   width:100%;
@@ -477,6 +466,22 @@ ul.bullets {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(200%) contrast(200%);
 }
 
+ul.bullets .hidden {
+  -webkit-transition:all 0.5 ease;
+  -moz-transition:all 0.5 ease;
+  -o-transition:all 0.5 ease;
+  transition:all 0.5 ease;
+  position:relative;
+  display:inline-block;
+  width: 15px;
+  height: 22px;
+  top: 8px;
+  margin-left: 11.2px !important;
+  opacity: 1;
+  background-size:contain !important;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(200%) contrast(200%);
+  background: url('/img/smallArrows.svg') no-repeat;
+}
   
 .block-capabilities-expertise{
   position:relative;
@@ -690,19 +695,33 @@ ul.bullets {
 .col-5 {
   width:100%;
 }
+.mb-4 {
+    margin-bottom: 1.5rem!important;
+}
 ul.bullets {
   column-count: 1;
   display: inline;
-  font-size: .8em;
+  font-size: .78em;
   padding: 0;
   margin:0 0 0 0;
 }
 ul.bullets .hidden {
-  margin: 0 7.9px 0 0px;
-  color:#eaeaea;
-  padding: 0;
-  letter-spacing: .1 px;
+  -webkit-transition:all .2s ease-in-out;
+  -moz-transition:all .2s ease-in-out;
+  -o-transition:all .2s ease-in-out;
+  transition:all .2s ease-in-out;
+  position:relative;
+  display:inline-block;
+  width: 10px;
+  height: 20px;
+  top: 10px;
+  margin-left: 15px !important;
+  opacity: 1;
+  background-size:contain !important;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(200%) contrast(200%);
+  background: url('/img/smallArrows.svg') no-repeat;
 }
+
 ul.bullets:hover {
   padding: 0;
 }
@@ -783,6 +802,7 @@ ul.bullets:hover {
   }
   .box {
     overflow-wrap: unset;
+    margin-left: 20px;
   }
   ul.bullets {
     column-count: 1;
@@ -790,15 +810,25 @@ ul.bullets:hover {
     font-size: .6em;
     padding: 0;
     margin: 0;
-    clear:left;
   }
 
   ul.bullets .hidden {
-    -webkit-transform:scale(.35, 1.7);
-    transform: scale(.35, 1.7);
-    color:#eaeaea;
-    letter-spacing: 0 px;
-}
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    -o-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+    position:relative;
+    display:inline-block;
+    width: 10px;
+    height: 20px;
+    top: 10px;
+    margin-left: 14.5px !important;
+    opacity: 1;
+    background-size:contain !important;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(200%) contrast(200%);
+    background: url('/img/smallArrows.svg') no-repeat;
+  }
+
   ul.bullets:hover {
     margin: 0;
     clear: left;
@@ -809,11 +839,12 @@ ul.bullets:hover {
     height: 258px
   }
   .active {
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    -o-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
     white-space: nowrap;
     padding: 0;
-    transition: all .5s ease-in;
-    margin: 0 5px 0 2px;
-    -webkit-transition: all 1s ease-in;
     text-decoration: none;
     border-radius: 5px 5px 5px 5px;
     background: var(--grey);
@@ -860,7 +891,22 @@ ul.bullets:hover {
     .col-12{
       width: 550px;
     }
-
+    ul.bullets .hidden {
+      -webkit-transition:all 1s ease;
+      -moz-transition:all 1s ease;
+      -o-transition:all 1s ease;
+      transition:all 1s ease;
+      position:relative;
+      display:inline-block;
+      width: 15px;
+      height: 22px;
+      top: 8px;
+      margin-left: 9.9px !important;
+      opacity: 1;
+      background-size:contain !important;
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(200%) contrast(200%);
+      background: url('/img/smallArrows.svg') no-repeat;
+    }
 }
 .arrows {
   content: ">>"

@@ -125,7 +125,7 @@ $(document).ready(function () {
       var num = $(this).data('num');
       slider.slick('slickGoTo', parseInt(num));
       $('.bullets li.active').removeClass('active');
-      $(this).addClass('active');
+      $(this).addClass('active',false);
 
    });
 
@@ -134,10 +134,19 @@ $(document).ready(function () {
       $('.bullets li.active').removeClass('active');
       $('.bullets li[data-num=' + nextSlide + ']').addClass('active');
       $('.bullets span.active').removeClass('.show').stop(true, true).hide();
-      $('.bullets span.active').addClass('.hidden').fadeIn(1200);
+      $('.bullets span.active').addClass('.hidden').fadeIn(600);
       $('.bullets li')
     
   });
+  $('.box li').hoverIntent(function(e) {
+    e.preventDefault();
+    var num = $(this).data('num');
+    
+    slider.slick('slickGoTo', parseInt(num));
+
+    $('.box li.active').removeClass('active');
+    $(this).addClass('active');
+});
 
 //capabilities jquery script end
 
