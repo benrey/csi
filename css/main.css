@@ -33,13 +33,14 @@
  right: 0;
  height: 95px;
  padding-top: 100px;
- z-index: 99;
+ z-index: 999;
 }
 
 #header.visiblebg {
  background-color: #222 !important;
 }
 #mainSlideShow{
+  z-index: 998;
   height: 0;
   padding-top: 45%;
   background-attachment: cover;
@@ -79,6 +80,7 @@ background: url(../img/work/19.jpg), url(../img/work/19.jpg);
   }
 }
 #mainSlideShow .container-xxl {
+  z-index:998;
   position: absolute;
   top: 30px;
   left: 275px;
