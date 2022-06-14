@@ -1845,6 +1845,9 @@ footer {
     font-size: .75em;
     width: 64%;
   }
+.container-fluid.height.visiblebg {
+  height: 26vh;
+}
 
   nav.navbar {
     max-width: 92%;
