@@ -29,9 +29,9 @@ $(document).ready(function () {
   $('.hidden').hide();
   $('.bullets li').hover(function () {
     $(this).find('.show').stop(true, true).hide();
-    $(this).find('.hidden').fadeIn(1200);
+    $(this).find('.hidden').fadeIn(700);
   }, function () {
-    $(this).find('.show').fadeIn(1200);
+    $(this).find('.show').fadeIn(700);
     $(this).find('.hidden').stop(true, true).hide();
   })
   // label
@@ -134,8 +134,7 @@ $(document).ready(function () {
       $('.bullets li.active').removeClass('active');
       $('.bullets li[data-num=' + nextSlide + ']').addClass('active');
       $('.bullets span.active').removeClass('.show').stop(true, true).hide();
-      $('.bullets span.active').addClass('.hidden').fadeIn(600);
-      $('.bullets li')
+      $('.bullets span.active').addClass('.hidden');
     
   });
   $('.box li').hoverIntent(function(e) {

@@ -16,7 +16,7 @@
 }
 
 /*fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Damion&family=Fanwood+Text:ital@0;1&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,400&family=Space+Grotesk:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Fanwood+Text:ital@0;1&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,400&family=Space+Grotesk:wght@300;400&display=swap&Meera+Inimai&display=swap');');
 
 *,
 *::before,
@@ -50,21 +50,20 @@ bg {
 }
 
 #mainSlideShow {
-  z-index: 998;
+  background: url(../img/work/19.jpg), url(../img/work/19.jpg);
   height: 0;
   padding-top: 45%;
   background-attachment: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-position: center center;
+  background-position: 0 0;
   background-size: cover !important;
-  -webkit-animation: slideShows ease-in-out-in-out 25s both infinite;
-  -moz-animation: slideShows ease-in-out-in-out 25s both infinite;
-  -o-animation: slideShows ease-in-out-in-out 25s both infinite;
-  animation: slideShows ease-in-out-in-out 25s both infinite;
+  -webkit-animation: slideShows ease-in-out 25s infinite both;
+  -moz-animation: slideShows ease-in-out 25s infinite both;
+  -o-animation: slideShows ease-in-out 25s infinite both;
+  animation: slideShows ease-in-out 25s infinite both;
   background-repeat: no-repeat;
-  background: url(../img/work/19.jpg), url(../img/work/19.jpg);
 }
 
 @keyframes slideShows {
@@ -118,8 +117,9 @@ bg {
 #mainSlideShow p {
   margin-left: 100px;
   width: 35%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: .7em;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 100;
+  font-size: .85em;
 }
 
 #mainSlideShow h1,
@@ -127,10 +127,11 @@ h2,
 p {
   opacity: 0;
 }
+
 .block-capabilities {
   position: relative;
   width: 100%;
-  padding-bottom: 50vh;
+  margin-bottom:2vh;
 }
 .slick-slider {
   display: table !important;
@@ -177,6 +178,9 @@ nav.navbar {
 }
 
 .navbar-brand-text {
+  font-family: 'Meera Inimai', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
   font-size: 1.4em;
   letter-spacing: 3px;
   color: var(--cutltured);
@@ -197,10 +201,6 @@ nav.navbar {
   transition: transform 0.05s;
   transform: scaleX(0);
   transform-origin: top;
-}
-
-.navbar-nav {
-  margin-right: 40px;
 }
 
 .navbar-brand-text:hover {
@@ -324,9 +324,10 @@ nav.navbar {
 }
 
 .nav-link {
-  font-weight: 150;
+  font-family: 'Meera Inimai', sans-serif;
+  font-weight: 600;
   letter-spacing: 2px;
-  font-size: .9em;
+  font-size: .8em;
   padding: 4px 0px;
   margin: 10px 10px;
   color: var(--cutltured);
@@ -387,7 +388,7 @@ nav.navbar {
 .container-xxl h1 {
   color: var(--cutltured);
   font-family: 'Merriweather', serif;
-  font-size: 2em !important;
+  font-size: 2em;
 }
 
 .feature {
@@ -397,7 +398,7 @@ nav.navbar {
 .feature .box {
   text-align: bottom;
   display: block;
-  margin: -3vh 0 0 6vw;
+  margin: -3.5vh 0 0 4vw;
   height: 22em;
   max-width: 88%;
   background-color: var(--eerieBlack);
@@ -413,7 +414,7 @@ nav.navbar {
 }
 
 .feature h3 {
-  margin-top: 3.5em;
+  margin-top: 15%;
   margin-inline-start: 5em;
   margin-bottom: 20px;
   font-family: 'Space Grotesk', sans-serif;
@@ -508,7 +509,6 @@ nav.navbar {
 .block-capabilities p {
   opacity: 1;
   max-width: 575px;
-  margin-left: 8vh;
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -560,7 +560,6 @@ ul a:hover {
 .bullets {
   list-style: none;
 }
-
 ul.bullets {
   display: inline-block;
   -webkit-column-count: 2;
@@ -590,10 +589,6 @@ ul.bullets span {
 }
 
 ul.bullets .hidden {
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   position: relative;
   display: inline-block;
   position: absolute;
@@ -617,10 +612,6 @@ li.item6 {
   display: table-cell;
 }
 
-.g-col-6 {
-  margin-left: 60px;
-}
-
 .image {
   position: relative;
   margin: 20px 0px 0 0px;
@@ -638,18 +629,16 @@ li.item6 {
   top: 0%;
   left: 0%;
 }
-
-
 .projects {
-  display: inline;
-  width: 100%;
+  margin:auto;
+  max-width: 1100px;
   clear: left;
   font-family: 'Playfair Display', 'Fanwood Text', serif;
   color: var(--richBlack);
 }
 .projects .container {
   position:relative;
-  top: 35vh;
+  margin-top: 4vh;
 }
 
 .projects a {
@@ -1771,10 +1760,7 @@ body.search #search-page .project-thumb.label-bottom .bottom {
 
 .projects .row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-}
-footer {
-
+  grid-template-columns: repeat(auto-fit, minmax(80px, 2fr));
 }
 
 #footer .container {
@@ -1782,7 +1768,9 @@ footer {
   max-width: 1320px;
   height: 2.5rem;
 }
-
+footer {
+  margin-top: 10vh;
+}
 .footerCerakotehref>img {
   max-height: 200px;
   max-width: 200px;
@@ -1804,7 +1792,7 @@ footer {
 }
 
 .col-5 {
-  width: 40%
+  width: 44%
 }
 
 .gol-col-6 .col-12 {
@@ -1831,6 +1819,13 @@ footer {
     font-size: unset;
     max-width: 400px;
     margin:auto;
+  }
+  ms-4 {
+    margin-left: 0;
+  }
+  #mainSlideShow h1 {
+    text-align: left;
+    font-size: 1.5em;
   }
   #mainSlideShow h2 {
     justify-content: left;
@@ -1899,9 +1894,6 @@ footer {
     width: 8em;
   }
 
-  .ms-4 {
-    margin-left: 3rem !important;
-  }
 
   .box {
     text-align: center;
@@ -2109,9 +2101,8 @@ footer {
     min-height: 0;
     min-width: 0;
   }
-
   #mainSlideShow .container-xxl {
-    padding-top: 16.5%;
+    padding-top: 11.5%;
     font-size: unset;
   }
 
@@ -2528,7 +2519,7 @@ footer {
   }
 
   #mainSlideShow .container-xxl {
-    top: 1%;
+    padding-top: 21%;
     left: 15%;
   }
 
