@@ -219,7 +219,7 @@ nav.navbar {
 }
 
 .nav-icons {
-  margin: auto;
+  margin: 0 0 0 0;
 }
 
 .navbar.transparent.navbar-inverse,
@@ -533,11 +533,9 @@ ul a:hover {
   text-decoration: none;
   color: #eeeeee;
 }
-
 .bullets li:hover {
   text-decoration: none;
 }
-
 .active {
   list-style-type: none;
   list-style-type: none;
@@ -579,7 +577,6 @@ ul.bullets {
   list-style: none;
   z-index: 1;
 }
-
 ul.bullets span {
   font-family: 'Merriweather', serif;
   font-size: 1.7em;
@@ -587,7 +584,6 @@ ul.bullets span {
   padding: 0;
   margin-right: 7px;
 }
-
 ul.bullets .hidden {
   position: relative;
   display: inline-block;
@@ -605,13 +601,11 @@ ul.bullets .hidden {
   filter: invert(12%) sepia(88%) saturate(6745%) hue-rotate(345deg) brightness(98%) contrast(108%);
   background: url('/img/smallArrows.svg') no-repeat;
 }
-
 li.item6 {
   position: absolute;
   left: 21px;
   display: table-cell;
 }
-
 .image {
   position: relative;
   margin: 20px 0px 0 0px;
@@ -626,8 +620,22 @@ li.item6 {
 }
 .capabilities .container {
   position: relative;
-  top: 0%;
-  left: 0%;
+  top: 20px;
+  left: 50px;
+}
+.outline {
+  border-left: 20px solid var(--richBlack);
+  border-bottom: 20px solid var(--richBlack);
+}
+.outline:before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  left: 0px;
+  height: 50px;
+  width: 20px;
+  border-top-right-radius: 25px;
+  box-shadow: 0 -25px 0 0 var(--richBlack);
 }
 .projects {
   margin:auto;
@@ -640,22 +648,18 @@ li.item6 {
   position:relative;
   margin-top: 4vh;
 }
-
 .projects a {
   color: var(--greyBlack);
 }
-
 .projects p {
   margin: unset;
 }
-
 .projects h2 {
   height: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 }
-
 .project-thumb-bg {
   background-position: 15px center !important;
   background-repeat: no-repeat !important;
@@ -1762,8 +1766,25 @@ body.search #search-page .project-thumb.label-bottom .bottom {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 2fr));
 }
+clients .container {
+  background: url("../img/clients/clinetCollage.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  font-size: 1.2em;
+  text-align: center;
+  margin: auto;
+  font-family: 'Playfair Display', 'Fanwood Text', serif;
+  color: var(--cutltured);
+}
+clients .spotlight {
+  margin: auto;
+  max-width: 400px;
+}
+clients p {
+  opacity: 1;
+}
 
-#footer .container {
+footer .container {
   position:relative;
   max-width: 1320px;
   height: 2.5rem;
