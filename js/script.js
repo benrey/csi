@@ -1,7 +1,11 @@
 // You can also use <link> for styles
-
+window.addEventListener('load', AOS.refresh);
+AOS.init();
+AOS.refresh();
 
 $(window).scroll(function () {
+  AOS.init();
+  AOS.refresh();
   if ($(document).scrollTop() > 20) {
     $('header').addClass('visiblebg');
     $('con').addClass('visiblebg')
@@ -166,6 +170,4 @@ function checkSize(){
 
 var icon = document.getElementsByClassName("icon-bars");
 var pushDown = document.getElementById("push");
-window.addEventListener('load', AOS.refresh);
-AOS.init();
-AOS.refresh();
+
