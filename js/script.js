@@ -106,7 +106,7 @@ $(document).ready(function () {
       dots: false,
       arrows: false,
       pauseOnHover: true,
-      pauseOnFocus: true
+      pauseOnFocus: true   
   }).slick("slickPause");
   
   setTimeout(function() {
