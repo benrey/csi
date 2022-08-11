@@ -38,12 +38,12 @@
 @font-face {
     font-family: 'harriet-display';
     /* IE9 Compat Modes */
-    src: url("https://benrey.github.io/csi/fontsHDLWF.eot");
+    src: url("https://benrey.github.io/csi/fonts/HDLWF.eot");
     /* IE6-IE8 */
     /* Modern Browsers */
     /* Safari, Android, iOS */
     /* Legacy iOS */
-    src: url("https://benrey.github.io/csi/fontsHDLWF.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fontsHDLWF.woff") format('woff'), url("https://benrey.github.io/csi/fontsHDLWF.ttf") format('truetype'), url("https://benrey.github.io/csi/fontsHDLWF.svg#svgFontName") format('svg');
+    src: url("https://benrey.github.io/csi/fonts/HDLWF.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fonts/HDLWF.woff") format('woff'), url("https://benrey.github.io/csi/fonts/HDLWF.ttf") format('truetype'), url("https://benrey.github.io/csi/fonts/HDLWF.svg#svgFontName") format('svg');
     font-weight: 300;
     font-style: normal;
 }
@@ -51,12 +51,12 @@
 @font-face {
     font-family: 'harriet-display';
     /* IE9 Compat Modes */
-    src: url("https://benrey.github.io/csi/fontsHDRWF.eot");
+    src: url("https://benrey.github.io/csi/fonts/HDRWF.eot");
     /* IE6-IE8 */
     /* Modern Browsers */
     /* Safari, Android, iOS */
     /* Legacy iOS */
-    src: url("https://benrey.github.io/csi/fontsHDRWF.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fontsHDRWF.woff") format('woff'), url("https://benrey.github.io/csi/fontsHDRWF.ttf") format('truetype'), url("https://benrey.github.io/csi/fontsHDRWF.svg#svgFontName") format('svg');
+    src: url("https://benrey.github.io/csi/fonts/HDRWF.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fonts/HDRWF.woff") format('woff'), url("https://benrey.github.io/csi/fonts/HDRWF.ttf") format('truetype'), url("https://benrey.github.io/csi/fonts/HDRWF.svg#svgFontName") format('svg');
     font-weight: 400;
     font-style: normal;
 }
@@ -64,12 +64,12 @@
 @font-face {
     font-family: 'harriet-display';
     /* IE9 Compat Modes */
-    src: url("https://benrey.github.io/csi/fontsHDMWF.eot");
+    src: url("https://benrey.github.io/csi/fonts/HDMWF.eot");
     /* IE6-IE8 */
     /* Modern Browsers */
     /* Safari, Android, iOS */
     /* Legacy iOS */
-    src: url("https://benrey.github.io/csi/fontsHDMWF.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fontsHDMWF.woff") format('woff'), url("https://benrey.github.io/csi/fontsHDMWF.ttf") format('truetype'), url("https://benrey.github.io/csi/fontsHDMWF.svg#svgFontName") format('svg');
+    src: url("https://benrey.github.io/csi/fonts/HDMWF.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fonts/HDMWF.woff") format('woff'), url("https://benrey.github.io/csi/fonts/HDMWF.ttf") format('truetype'), url("https://benrey.github.io/csi/fonts/HDMWF.svg#svgFontName") format('svg');
     font-weight: 500;
     font-style: normal;
 }
