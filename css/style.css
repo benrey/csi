@@ -7458,7 +7458,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     bottom: 0;
     right: 0;
     opacity: 0;
-    background: var(--coreLtGray) url(https://benrey.github.io/csi/img/arrow.svg) center center no-repeat;
+    background: var(--coreLtGray) url(https://benrey.github.io/csi/images/arrow.svg) center center no-repeat;
     background-size: 18px 15px;
 }
 
