@@ -38,12 +38,12 @@
 @font-face {
     font-family: 'harriet-display';
     /* IE9 Compat Modes */
-    src: url("https://benrey.github.io/csi/fonts/harriet/HDLWF.eot");
+    src: url("https://benrey.github.io/csi/fontsHDLWF.eot");
     /* IE6-IE8 */
     /* Modern Browsers */
     /* Safari, Android, iOS */
     /* Legacy iOS */
-    src: url("https://benrey.github.io/csi/fonts/harriet/HDLWF.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fonts/harriet/HDLWF.woff") format('woff'), url("https://benrey.github.io/csi/fonts/harriet/HDLWF.ttf") format('truetype'), url("https://benrey.github.io/csi/fonts/harriet/HDLWF.svg#svgFontName") format('svg');
+    src: url("https://benrey.github.io/csi/fontsHDLWF.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fontsHDLWF.woff") format('woff'), url("https://benrey.github.io/csi/fontsHDLWF.ttf") format('truetype'), url("https://benrey.github.io/csi/fontsHDLWF.svg#svgFontName") format('svg');
     font-weight: 300;
     font-style: normal;
 }
@@ -51,12 +51,12 @@
 @font-face {
     font-family: 'harriet-display';
     /* IE9 Compat Modes */
-    src: url("https://benrey.github.io/csi/fonts/harriet/HDRWF.eot");
+    src: url("https://benrey.github.io/csi/fontsHDRWF.eot");
     /* IE6-IE8 */
     /* Modern Browsers */
     /* Safari, Android, iOS */
     /* Legacy iOS */
-    src: url("https://benrey.github.io/csi/fonts/harriet/HDRWF.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fonts/harriet/HDRWF.woff") format('woff'), url("https://benrey.github.io/csi/fonts/harriet/HDRWF.ttf") format('truetype'), url("https://benrey.github.io/csi/fonts/harriet/HDRWF.svg#svgFontName") format('svg');
+    src: url("https://benrey.github.io/csi/fontsHDRWF.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fontsHDRWF.woff") format('woff'), url("https://benrey.github.io/csi/fontsHDRWF.ttf") format('truetype'), url("https://benrey.github.io/csi/fontsHDRWF.svg#svgFontName") format('svg');
     font-weight: 400;
     font-style: normal;
 }
@@ -64,12 +64,12 @@
 @font-face {
     font-family: 'harriet-display';
     /* IE9 Compat Modes */
-    src: url("https://benrey.github.io/csi/fonts/harriet/HDMWF.eot");
+    src: url("https://benrey.github.io/csi/fontsHDMWF.eot");
     /* IE6-IE8 */
     /* Modern Browsers */
     /* Safari, Android, iOS */
     /* Legacy iOS */
-    src: url("https://benrey.github.io/csi/fonts/harriet/HDMWF.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fonts/harriet/HDMWF.woff") format('woff'), url("https://benrey.github.io/csi/fonts/harriet/HDMWF.ttf") format('truetype'), url("https://benrey.github.io/csi/fonts/harriet/HDMWF.svg#svgFontName") format('svg');
+    src: url("https://benrey.github.io/csi/fontsHDMWF.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fontsHDMWF.woff") format('woff'), url("https://benrey.github.io/csi/fontsHDMWF.ttf") format('truetype'), url("https://benrey.github.io/csi/fontsHDMWF.svg#svgFontName") format('svg');
     font-weight: 500;
     font-style: normal;
 }
@@ -77,12 +77,12 @@
 @font-face {
     font-family: 'post-grotesk';
     /* IE9 Compat Modes */
-    src: url("https://benrey.github.io/csi/fonts/postGrotesk/PGL.eot");
+    src: url("https://benrey.github.io/csi/fonts/PGL.eot");
     /* IE6-IE8 */
     /* Modern Browsers */
     /* Safari, Android, iOS */
     /* Legacy iOS */
-    src: url("https://benrey.github.io/csi/fonts/postGrotesk/PGL.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fonts/postGrotesk/PGL.woff") format('woff'), url("https://benrey.github.io/csi/fonts/postGrotesk/PGL.ttf") format('truetype'), url("https://benrey.github.io/csi/fonts/postGrotesk/PGL.svg#svgFontName") format('svg');
+    src: url("https://benrey.github.io/csi/fonts/PGL.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fonts/PGL.woff") format('woff'), url("https://benrey.github.io/csi/fonts/PGL.ttf") format('truetype'), url("https://benrey.github.io/csi/fonts/PGL.svg#svgFontName") format('svg');
     font-weight: 300;
     font-style: normal;
 }
@@ -90,12 +90,12 @@
 @font-face {
     font-family: 'post-grotesk';
     /* IE9 Compat Modes */
-    src: url("https://benrey.github.io/csi/fonts/postGrotesk/PGB.eot");
+    src: url("https://benrey.github.io/csi/fonts/PGB.eot");
     /* IE6-IE8 */
     /* Modern Browsers */
     /* Safari, Android, iOS */
     /* Legacy iOS */
-    src: url("https://benrey.github.io/csi/fonts/postGrotesk/PGB.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fonts/postGrotesk/PGB.woff") format('woff'), url("https://benrey.github.io/csi/fonts/postGrotesk/PGB.ttf") format('truetype'), url("https://benrey.github.io/csi/fonts/postGrotesk/PGB.svg#svgFontName") format('svg');
+    src: url("https://benrey.github.io/csi/fonts/PGB.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fonts/PGB.woff") format('woff'), url("https://benrey.github.io/csi/fonts/PGB.ttf") format('truetype'), url("https://benrey.github.io/csi/fonts/PGB.svg#svgFontName") format('svg');
     font-weight: 400;
     font-style: normal;
 }
@@ -103,12 +103,12 @@
 @font-face {
     font-family: 'post-grotesk';
     /* IE9 Compat Modes */
-    src: url("https://benrey.github.io/csi/fonts/postGrotesk/PGM.eot");
+    src: url("https://benrey.github.io/csi/fonts/PGM.eot");
     /* IE6-IE8 */
     /* Modern Browsers */
     /* Safari, Android, iOS */
     /* Legacy iOS */
-    src: url("https://benrey.github.io/csi/fonts/postGrotesk/PGM.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fonts/postGrotesk/PGM.woff") format('woff'), url("https://benrey.github.io/csi/fonts/postGrotesk/PGM.ttf") format('truetype'), url("https://benrey.github.io/csi/fonts/postGrotesk/PGM.svg#svgFontName") format('svg');
+    src: url("https://benrey.github.io/csi/fonts/PGM.eot?#iefix") format('embedded-opentype'), url("https://benrey.github.io/csi/fonts/PGM.woff") format('woff'), url("https://benrey.github.io/csi/fonts/PGM.ttf") format('truetype'), url("https://benrey.github.io/csi/fonts/PGM.svg#svgFontName") format('svg');
     font-weight: 500;
     font-style: normal;
 }
