@@ -77,12 +77,12 @@
 @font-face {
     font-family: 'post-grotesk';
     /* IE9 Compat Modes */
-    src: url("../fonts/postgrotesk/PGL.eot");
+    src: url("../fonts/postGrotesk/PGL.eot");
     /* IE6-IE8 */
     /* Modern Browsers */
     /* Safari, Android, iOS */
     /* Legacy iOS */
-    src: url("../fonts/postgrotesk/PGL.eot?#iefix") format('embedded-opentype'), url("../fonts/postgrotesk/PGL.woff") format('woff'), url("../fonts/postgrotesk/PGL.ttf") format('truetype'), url("../fonts/postgrotesk/PGL.svg#svgFontName") format('svg');
+    src: url("../fonts/postGrotesk/PGL.eot?#iefix") format('embedded-opentype'), url("../fonts/postGrotesk/PGL.woff") format('woff'), url("../fonts/postGrotesk/PGL.ttf") format('truetype'), url("../fonts/postGrotesk/PGL.svg#svgFontName") format('svg');
     font-weight: 300;
     font-style: normal;
 }
@@ -90,12 +90,12 @@
 @font-face {
     font-family: 'post-grotesk';
     /* IE9 Compat Modes */
-    src: url("../fonts/postgrotesk/book/PGB.eot");
+    src: url("../fonts/postGrotesk/book/PGB.eot");
     /* IE6-IE8 */
     /* Modern Browsers */
     /* Safari, Android, iOS */
     /* Legacy iOS */
-    src: url("../fonts/postgrotesk/book/PGB.eot?#iefix") format('embedded-opentype'), url("../fonts/postgrotesk/book/PGB.woff") format('woff'), url("../fonts/postgrotesk/book/PGB.ttf") format('truetype'), url("../fonts/postgrotesk/book/PGB.svg#svgFontName") format('svg');
+    src: url("../fonts/postGrotesk/book/PGB.eot?#iefix") format('embedded-opentype'), url("../fonts/postGrotesk/book/PGB.woff") format('woff'), url("../fonts/postGrotesk/book/PGB.ttf") format('truetype'), url("../fonts/postGrotesk/book/PGB.svg#svgFontName") format('svg');
     font-weight: 400;
     font-style: normal;
 }
@@ -103,12 +103,12 @@
 @font-face {
     font-family: 'post-grotesk';
     /* IE9 Compat Modes */
-    src: url("../fonts/postgrotesk/PGM.eot");
+    src: url("../fonts/postGrotesk/PGM.eot");
     /* IE6-IE8 */
     /* Modern Browsers */
     /* Safari, Android, iOS */
     /* Legacy iOS */
-    src: url("../fonts/postgrotesk/PGM.eot?#iefix") format('embedded-opentype'), url("../fonts/postgrotesk/PGM.woff") format('woff'), url("../fonts/postgrotesk/PGM.ttf") format('truetype'), url("../fonts/postgrotesk/PGM.svg#svgFontName") format('svg');
+    src: url("../fonts/postGrotesk/PGM.eot?#iefix") format('embedded-opentype'), url("../fonts/postGrotesk/PGM.woff") format('woff'), url("../fonts/postGrotesk/PGM.ttf") format('truetype'), url("../fonts/postGrotesk/PGM.svg#svgFontName") format('svg');
     font-weight: 500;
     font-style: normal;
 }
