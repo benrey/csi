@@ -121,6 +121,8 @@
     --highRed: #bb554e;
     --coreRed: #a23425;
     --maroon: #8a1919;
+    --redBtn: #eb0505;
+    --greyCardBG: #485353;
   }
 
 *,
@@ -9135,7 +9137,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     bottom: 0;
     left: 15px;
     right: 15px;
-    background: #007bb2;
+    background: var(--greyCardBG);
     z-index: -1;
     border-radius: 0 12px 12px 0;
     overflow: hidden;
@@ -9156,7 +9158,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     bottom: 0;
     left: -50%;
     width: 100%;
-    background: #007bb2;
+    background: var(--greyCardBG);
     z-index: -1;
 }
 
@@ -9255,7 +9257,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     height: 48px;
     width: 48px;
     border-radius: 50%;
-    background: #0073a7;
+    background: var(--coreRed);
 }
 
 .block-three-spotlights .link span:after {
@@ -9268,6 +9270,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     height: 14px;
     width: 13px;
     background: url(../images/arrow.svg) 0 0 no-repeat;
+    filter: brightness(0)invert(.8);
     background-size: contain;
 }
 
@@ -10325,7 +10328,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 }
 
 .block-slideshow .slideshow-text .description {
-    color: #007bb2;
+    color: var(--greyCardBG);
     font-size: 18px;
     line-height: 28px;
     font-weight: 300;
