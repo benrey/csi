@@ -2863,6 +2863,7 @@ body.single-work #site-header.light nav li.menu-item-16 a:after {
 #site-footer .copyright img {
     height: 29px;
     width: 29px;
+    filter: invert(50%) sepia(87%) saturate(3681%) hue-rotate(335deg) brightness(96%) contrast(75%);
 }
 
 @media (min-width:768px) {
