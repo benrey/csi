@@ -7533,6 +7533,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     position: relative;
     z-index: 2;
     margin-left: 14%;
+    padding-bottom:2em;
 }
 
 .block-capabilities .slideshow .image {
@@ -7840,7 +7841,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 }
 
 .block-capabilities-services .g-container.capabilitieslist .box li.active {
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .block-capabilities-services .g-container.capabilitieslist .box li span:before {
