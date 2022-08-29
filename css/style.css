@@ -113,8 +113,8 @@
     font-style: normal;
 }
 :root {
-    --coreGray: #686868;
-    --coreLtGray: #828282;
+    --coreGrey: #686868;
+    --coreLtGrey: #828282;
     --chalk: #d6d6d6;
     --pure: #fff;
     --highLtRed: #d9584f;
@@ -123,6 +123,7 @@
     --maroon: #8a1919;
     --redBtn: #eb0505;
     --greyCardBG: #485353;
+    --dkGrey: #222222;
   }
 
 *,
@@ -174,7 +175,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    color: #454545;
+    color: var(--coreGrey);
     text-align: left;
     background-color: var(--pure);
 }
@@ -275,14 +276,14 @@ sup {
 }
 
 a {
-    color: var(--coreGray);
+    color: var(--coreGrey);
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-    color: var(--coreGray);
+    color: var(--coreGrey);
     text-decoration: none;
 }
 
@@ -744,7 +745,7 @@ template {
     z-index: 9999;
     bottom: 15px;
     left: 20px;
-    color: var(--coreGray);
+    color: var(--coreGrey);
     font-size: 13px;
     line-height: 18px;
     font-weight: 500;
@@ -2291,7 +2292,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     font-size: 1.5rem;
 }
 #site-header .scrolled {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 body.searching #site-header,
 body.scrolled #site-header {
@@ -2507,7 +2508,7 @@ body.scrolled #site-header nav svg circle {
 #site-header nav li:last-child a:hover svg line,
 #site-header nav li:last-child a:focus svg circle,
 #site-header nav li:last-child a:focus svg line {
-    stroke: var(--coreGray);
+    stroke: var(--coreGrey);
 }
 
 #site-header nav li:last-child a:after {
@@ -2546,7 +2547,7 @@ body.scrolled #site-header nav svg circle {
 }
 
 #site-header nav a:hover:after {
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 #site-header nav a svg circle,
@@ -2559,7 +2560,7 @@ body.scrolled #site-header nav svg circle {
 
 #site-header nav #menu-search a.active svg circle,
 #site-header nav #menu-search a.active svg line {
-    stroke: var(--coreGray);
+    stroke: var(--coreGrey);
 }
 
 #site-header #site-search {
@@ -2636,7 +2637,7 @@ body.scrolled #site-header nav svg circle {
 #site-header #site-search form.mobile button:hover svg line,
 #site-header #site-search form.mobile button:focus svg circle,
 #site-header #site-search form.mobile button:focus svg line {
-    stroke: var(--coreGray);
+    stroke: var(--coreGrey);
 }
 
 #site-header #site-search form.desktop {
@@ -2736,12 +2737,12 @@ body.scrolled #site-header nav svg circle {
     font-size: 18px;
     line-height: 64px;
     font-weight: 300;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 #site-header #site-search form.desktop button:hover,
 #site-header #site-search form.desktop button:focus {
-    background: var(--coreGray);
+    background: var(--coreGrey);
     color: var(--pure);
 }
 
@@ -3042,7 +3043,7 @@ body.single-work #site-header.light nav li.menu-item-16 a:after {
     overflow: hidden;
     background: #faf7f0;
     font-family: "harriet-display", Helvetica, serif;
-    color: var(--coreGray);
+    color: var(--coreGrey);
     font-size: 16px;
     font-weight: 300;
 }
@@ -3144,12 +3145,12 @@ main p:last-child {
 
 .btn-cta.btn-cta-dark-orange:before,
 .btn-cta.btn-cta-dark-orange:after {
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 .btn-cta.btn-cta-dark-orange:hover,
 .btn-cta.btn-cta-dark-orange:focus {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .btn-cta.btn-cta-white {
@@ -3291,7 +3292,7 @@ main p:last-child {
 }
 
 .btn-arrow-caps.light:hover {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .btn-arrow-caps.light:hover span {
@@ -3389,7 +3390,7 @@ main p:last-child {
 }
 
 .btn-arrow-title.light:hover {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .btn-arrow-title.light:hover span {
@@ -3461,7 +3462,7 @@ main p:last-child {
 }
 
 .btn-arrow-pill:hover {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .btn-arrow-pill span {
@@ -3509,7 +3510,7 @@ body .mejs-overlay:hover>.mejs-overlay-button {
 }
 
 body .mejs-controls .mejs-time-rail .mejs-time-current {
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 body .project-video .mejs-controls {
@@ -3967,17 +3968,17 @@ body .project-video.playing .mejs-controls {
     font-weight: 300;
     letter-spacing: 0.3px;
     font-weight: 400;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .project-thumb .label h2 a {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .project-thumb .label h2 a:hover:after,
 .project-thumb .label h2 a:focus:after,
 .project-thumb .label h2 a.hover:after {
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 .project-thumb .label p {
@@ -5056,7 +5057,7 @@ body.search #search-page .project-thumb.label-bottom .bottom {
 
 .blog-thumb .label a:hover,
 .blog-thumb .label a:focus {
-    text-decoration-color: var(--coreGray);
+    text-decoration-color: var(--coreGrey);
 }
 
 .blog-thumb .label .date {
@@ -5076,7 +5077,7 @@ body.search #search-page .project-thumb.label-bottom .bottom {
     font-weight: 300;
     letter-spacing: 0.3px;
     font-weight: 400;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -5086,13 +5087,13 @@ body.search #search-page .project-thumb.label-bottom .bottom {
 }
 
 .blog-thumb .label h2 a {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .blog-thumb .label h2 a:hover:after,
 .blog-thumb .label h2 a:focus:after,
 .blog-thumb .label h2 a.hover:after {
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 .blog-thumb .label p {
@@ -5398,7 +5399,7 @@ body.search #search-page .project-thumb.label-bottom .bottom {
     font-weight: 300;
     letter-spacing: 0.3px;
     font-weight: 400;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .search-result h2 a {
@@ -5406,7 +5407,7 @@ body.search #search-page .project-thumb.label-bottom .bottom {
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    color: var(--coreGray);
+    color: var(--coreGrey);
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
@@ -5415,7 +5416,7 @@ body.search #search-page .project-thumb.label-bottom .bottom {
 
 .search-result h2 a:hover,
 .search-result h2 a:focus {
-    text-decoration-color: var(--coreGray);
+    text-decoration-color: var(--coreGrey);
 }
 
 .search-result h2 a:after {
@@ -5529,7 +5530,7 @@ form#contact .form-section p {
 }
 
 form#contact .form-section p span {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 form#contact .form-input {
@@ -5560,11 +5561,11 @@ form#contact .form-input.loading .tooltip {
 }
 
 form#contact .form-input.found label {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 form#contact .form-input.error input {
-    border-bottom: 1px solid var(--coreGray);
+    border-bottom: 1px solid var(--coreGrey);
 }
 
 form#contact .form-input.error .error-msg {
@@ -5572,7 +5573,7 @@ form#contact .form-input.error .error-msg {
 }
 
 form#contact .form-input.invalid input {
-    border-bottom: 1px solid var(--coreGray);
+    border-bottom: 1px solid var(--coreGrey);
 }
 
 form#contact .form-input.invalid .invalid-msg {
@@ -5595,7 +5596,7 @@ form#contact .form-input label {
 
 form#contact .form-input label span {
     display: inline !important;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 form#contact .form-input span {
@@ -5613,7 +5614,7 @@ form#contact .form-input input {
     font-size: 18px;
     line-height: 22px;
     font-weight: 300;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 form#contact .form-input .error-msg {
@@ -5621,7 +5622,7 @@ form#contact .form-input .error-msg {
     margin-top: 15px;
     font-size: 14px;
     line-height: 20px;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 form#contact .form-input .invalid-msg {
@@ -5629,7 +5630,7 @@ form#contact .form-input .invalid-msg {
     margin-top: 15px;
     font-size: 14px;
     line-height: 20px;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 form#contact .form-input .tooltip {
@@ -5720,7 +5721,7 @@ form#contact .form-textarea textarea {
     font-size: 18px;
     line-height: 22px;
     font-weight: 300;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 form#contact .form-textarea p {
@@ -5743,7 +5744,7 @@ form#contact .alert {
 }
 
 form#contact .alert span {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 form#contact .form-options {
@@ -5809,7 +5810,7 @@ form#contact .form-options div.checkbox span {
 
 form#contact .form-options div.checkbox.active span {
     background: var(--pure);
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 form#contact .form-options input {
@@ -5838,7 +5839,7 @@ form#contact .form-button button {
     font-size: 18px;
     line-height: 64px;
     font-weight: 300;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -5867,7 +5868,7 @@ form#contact .form-button input {
     display: inline-block;
     height: 64px;
     padding: 0 35px;
-    background: var(--coreGray);
+    background: var(--coreGrey);
     border: 0;
     outline: none;
     border-radius: 32px;
@@ -5882,7 +5883,7 @@ form#contact .form-button input {
 
 form#contact .form-button input:hover,
 form#contact .form-button input:focus {
-    background: var(--coreLtGray);
+    background: var(--coreLtGrey);
 }
 
 form#contact .form-button input:disabled,
@@ -6217,7 +6218,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     line-height: 52px;
     font-weight: 400;
     letter-spacing: 0.3px;
-    color: var(--coreRed);
+    color: var(--maroon);
 }
 
 @media (min-width:768px) {
@@ -6489,7 +6490,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     left: -15px;
     bottom: 0;
     width: 14px;
-    background: var(--coreGray);
+    background: var(--coreGrey);
     border-radius: 0 8px 0 0;
 }
 
@@ -6507,7 +6508,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
         left: 0;
         bottom: 0;
         width: 15px;
-        background: var(--coreGray);
+        background: var(--coreGrey);
         border-radius: 0 8px 0 0;
     }
 }
@@ -6602,7 +6603,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: 400;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -6811,7 +6812,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: 400;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -6939,7 +6940,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     line-height: 52px;
     font-weight: 400;
     letter-spacing: 0.3px;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -7178,7 +7179,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 #blog-single-banner .tags a:hover,
 #blog-single-banner .tags a:focus {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .block-capabilities {
@@ -7291,7 +7292,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     left: -40px;
     right: 0;
     bottom: 0;
-    background: var(--coreGray);
+    background: var(--coreGrey);
     border-radius: 0 0 12px 0;
     z-index: 0;
     overflow: hidden;
@@ -7461,7 +7462,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     bottom: 0;
     right: 0;
     opacity: 0;
-    background: var(--coreLtGray) url(../images/arrow.svg) center center no-repeat;
+    background: var(--coreLtGrey) url(../images/arrow.svg) center center no-repeat;
     background-size: 18px 15px;
 }
 
@@ -7477,7 +7478,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 .block-capabilities .box li:hover:before,
 .block-capabilities .box li.active:before {
-    background: var(--coreLtGray);
+    background: var(--coreLtGrey);
 }
 
 .block-capabilities .box li:hover span:before,
@@ -7670,7 +7671,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     left: -130px;
     right: 0;
     bottom: 0;
-    background: var(--coreGray);
+    background: var(--coreGrey);
     border-radius: 0 12px 12px 0;
     z-index: 0;
     overflow: hidden;
@@ -7854,7 +7855,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     bottom: 0;
     right: 0;
     opacity: 0;
-    background: var(--coreLtGray) url(../images/arrow.svg) center center no-repeat;
+    background: var(--coreLtGrey) url(../images/arrow.svg) center center no-repeat;
     background-size: 18px 15px;
 
 }
@@ -7880,7 +7881,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
     .block-capabilities-services .g-container.capabilitieslist .box li:hover:before,
     .block-capabilities-services .g-container.capabilitieslist .box li.active:before {
-        background: var(--coreLtGray);
+        background: var(--coreLtGrey);
         opacity: 1;
     }
 
@@ -7897,7 +7898,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     margin-left: -56px;
     padding: 25px 10px 45px 56px;
     display: none;
-    background: var(--coreLtGray);
+    background: var(--coreLtGrey);
     border-radius: 0 12px 12px 0;
 }
 
@@ -7988,7 +7989,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     line-height: 36px;
     font-weight: 300;
     letter-spacing: 0.3px;
-    color: var(--coreGray);
+    color: var(--dkGrey);
     position: relative;
     z-index: 2;
 }
@@ -8179,7 +8180,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     font-weight: 300;
     letter-spacing: 0.3px;
     font-family: "harriet-display", Helvetica, serif;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:1024px) {
@@ -8228,7 +8229,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    stroke: var(--coreGray);
+    stroke: var(--coreGrey);
 }
 
 .block-capabilities-services .g-container.search form .error {
@@ -8236,7 +8237,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     margin-top: 15px;
     font-size: 14px;
     line-height: 20px;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:1024px) {
@@ -8348,12 +8349,12 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 .block-capabilities-services .g-container.results .intro p a:hover,
 .block-capabilities-services .g-container.noresults .intro p a:hover {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .block-capabilities-services .g-container.results .intro p a:hover:after,
 .block-capabilities-services .g-container.noresults .intro p a:hover:after {
-    background-color: var(--coreGray);
+    background-color: var(--coreGrey);
 }
 
 .block-capabilities-services .g-container.results .links,
@@ -8438,12 +8439,12 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 .block-capabilities-services .g-container.results .more a:hover,
 .block-capabilities-services .g-container.noresults .more a:hover {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .block-capabilities-services .g-container.results .more a:hover:after,
 .block-capabilities-services .g-container.noresults .more a:hover:after {
-    background-color: var(--coreGray);
+    background-color: var(--coreGrey);
 }
 
 @media (min-width:1024px) {
@@ -8479,14 +8480,14 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     clear: both;
     position: relative;
     background: #faf7f0;
-    border-bottom: 14px solid var(--coreGray);
+    border-bottom: 14px solid var(--coreGrey);
     padding-top: 64px;
     overflow: hidden;
 }
 
 @media (min-width:768px) {
     .block-featured-projects {
-        border-bottom: 15px solid var(--coreGray);
+        border-bottom: 15px solid var(--coreGrey);
         padding-top: 0;
     }
 }
@@ -8498,7 +8499,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     top: 142px;
     bottom: 0;
     width: 14px;
-    background: var(--coreGray);
+    background: var(--coreGrey);
     border-radius: 0 8px 0 0;
 }
 
@@ -8515,7 +8516,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     bottom: 0;
     height: 16px;
     width: 16px;
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -8656,7 +8657,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     letter-spacing: 0.3px;
     margin: 0 0 15px 0;
     max-width: 360px;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -8707,12 +8708,12 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     clear: both;
     position: relative;
     background: #faf7f0;
-    border-bottom: 14px solid var(--coreGray);
+    border-bottom: 14px solid var(--coreGrey);
 }
 
 @media (min-width:768px) {
     .block-all-projects {
-        border-bottom: 15px solid var(--coreGray);
+        border-bottom: 15px solid var(--coreGrey);
     }
 }
 
@@ -8723,7 +8724,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     top: 0;
     bottom: 0;
     width: 14px;
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -8738,7 +8739,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     bottom: 0;
     height: 16px;
     width: 16px;
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -9035,7 +9036,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 }
 
 .block-split-spotlights .link a:hover {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .block-split-spotlights .link a:hover span {
@@ -9385,7 +9386,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 }
 
 .block-timeline .navigation .prev:hover path {
-    stroke: var(--coreGray);
+    stroke: var(--coreGrey);
 }
 
 .block-timeline .navigation .next {
@@ -9424,7 +9425,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 }
 
 .block-timeline .navigation .next:hover path {
-    stroke: var(--coreGray);
+    stroke: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -9556,12 +9557,12 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 @media (min-width:768px) {
     .block-timeline .navigation li:hover span:before {
-        background: var(--coreGray);
+        background: var(--coreGrey);
     }
 
     .block-timeline .navigation li:hover label {
         visibility: visible;
-        color: var(--coreGray);
+        color: var(--coreGrey);
     }
 }
 
@@ -9604,7 +9605,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 .block-timeline .navigation li.slick-active span:before,
 .block-timeline .navigation li.active span:before {
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -9618,7 +9619,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 .block-timeline .navigation li.slick-active label,
 .block-timeline .navigation li.active label {
     visibility: visible;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -9747,7 +9748,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 }
 
 .block-timeline .timeline .slick-dots li.slick-active span {
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -9903,7 +9904,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     letter-spacing: 0.3px;
     margin: 0 0 30px 0;
     max-width: 360px;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -9935,7 +9936,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 .block-recent-posts .blog-cta {
     display: inline-block;
     margin-top: 50px;
-    color: var(--coreGray);
+    color: var(--coreGrey);
     text-align: right;
 }
 
@@ -10058,7 +10059,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 }
 
 .block-slideshow .slideshow-arrows .prev:hover path {
-    stroke: var(--coreGray);
+    stroke: var(--coreGrey);
 }
 
 .block-slideshow .slideshow-arrows .next {
@@ -10099,7 +10100,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 }
 
 .block-slideshow .slideshow-arrows .next:hover path {
-    stroke: var(--coreGray);
+    stroke: var(--coreGrey);
 }
 
 .block-slideshow .slick-dots {
@@ -10148,7 +10149,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 }
 
 .block-slideshow .slick-dots li.slick-active span {
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -10302,7 +10303,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     letter-spacing: 0.3px;
     margin: 0 0 20px 0;
     max-width: 360px;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .block-slideshow .slideshow-text .subtitle span {
@@ -10543,7 +10544,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 }
 
 .block-team-grid .team-member.enabled:hover h3 {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .block-team-grid .team-member.active {
@@ -10551,7 +10552,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 }
 
 .block-team-grid .team-member.active h3 {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .block-team-grid .team-member.active .arrow svg {
@@ -11156,7 +11157,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     font-weight: 300;
     text-transform: none;
     letter-spacing: 0 !important;
-    color: var(--coreGray);
+    color: var(--coreGrey);
     margin-bottom: 27px;
     padding-bottom: 11px;
 }
@@ -11255,7 +11256,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 }
 
 .block-clients-content a:hover {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .block-clients-content a:hover span {
@@ -11439,7 +11440,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     line-height: 36px;
     font-weight: 300;
     letter-spacing: 0.3px;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:1024px) {
@@ -11853,7 +11854,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     line-height: 32px;
     font-weight: 300;
     letter-spacing: 0.3px;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:1024px) {
@@ -12072,7 +12073,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 }
 
 .block-contact-tabs .tabs li:hover span {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -12093,7 +12094,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 }
 
 .block-contact-tabs .tabs li.active span:before {
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 .block-contact-tabs .tab-content {
@@ -12167,11 +12168,11 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 .block-contact-tabs .table .table-header .cell1:hover {
     cursor: pointer;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .block-contact-tabs .table .table-header .cell1:hover path {
-    stroke: var(--coreGray);
+    stroke: var(--coreGrey);
 }
 
 .block-contact-tabs .table .table-header .cell1 .toggle {
@@ -12250,7 +12251,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 }
 
 .block-contact-tabs .table .table-header .cell1:hover path {
-    stroke: var(--coreGray);
+    stroke: var(--coreGrey);
 }
 
 .block-contact-tabs .table .table-row .toggle {
@@ -12301,7 +12302,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 .block-contact-tabs .table .name2 {
     margin-bottom: 17px;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .block-contact-tabs .table .news {
@@ -12356,12 +12357,12 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 .block-contact-tabs .table .news a:hover,
 .block-contact-tabs .table .news a:focus {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .block-contact-tabs .table .news a:hover:after,
 .block-contact-tabs .table .news a:focus:after {
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 .block-contact-tabs .table .contact {
@@ -12440,7 +12441,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 .block-contact-tabs .table .table-row:hover .location,
 .block-contact-tabs .table .table-row:hover .name {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .block-contact-tabs .table .table-row.active {
@@ -12500,7 +12501,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 .block-contact-tabs .table .table-row.active .location,
 .block-contact-tabs .table .table-row.active .name {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .block-contact-content-spacer {
@@ -12780,12 +12781,12 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 .block-contact-content a.phone:hover,
 .block-contact-content a.phone:focus {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .block-contact-content a.phone:hover:after,
 .block-contact-content a.phone:focus:after {
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 #page-footer {
@@ -13006,7 +13007,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 #capability-banner ul.slick-dots li.active:before,
 #capability-banner ul.slick-dots li.slick-active:before {
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 #capability-banner ul.slick-dots li button {
@@ -13203,7 +13204,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     font-size: 24px;
     line-height: 36px;
     font-weight: 300;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -13313,7 +13314,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     left: -125px;
     right: 0;
     bottom: 0;
-    background: var(--coreGray);
+    background: var(--coreGrey);
     border-radius: 0 12px 12px 0;
     z-index: 0;
     overflow: hidden;
@@ -13510,7 +13511,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 @media (min-width:1024px) {
     .capability-content .expertise li:hover:before {
-        background: var(--coreLtGray);
+        background: var(--coreLtGrey);
     }
 
     .capability-content .expertise li:hover span:before {
@@ -13617,7 +13618,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 }
 
 .capability-content .contact h2:hover {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .capability-content .contact h2:hover span {
@@ -13719,7 +13720,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     top: -60px;
     bottom: -60px;
     width: 14px;
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -13737,7 +13738,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     top: 60px;
     bottom: 0;
     width: 14px;
-    background: var(--coreGray);
+    background: var(--coreGrey);
     border-radius: 0 8px 0 0;
     z-index: 1;
 }
@@ -13902,7 +13903,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     font-size: 42px;
     line-height: 52px;
     font-weight: 400;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -13932,7 +13933,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     letter-spacing: 1.5px;
     font-weight: 400;
     text-transform: uppercase;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -13989,7 +13990,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 .work-text .capabilities a:hover,
 .work-text .team a:focus,
 .work-text .capabilities a:focus {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .work-text blockquote.quote {
@@ -13999,7 +14000,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     font-size: 24px;
     line-height: 36px;
     font-weight: 300;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .work-text blockquote.quote p {
@@ -14008,7 +14009,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     font-size: 24px;
     line-height: 36px;
     font-weight: 300;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .work-text blockquote.quote p:first-child {
@@ -14029,7 +14030,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     line-height: 22px;
     font-weight: 500;
     letter-spacing: 1.5px;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .work-text p.large {
@@ -14064,7 +14065,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     top: 0;
     bottom: 0;
     width: 14px;
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -14150,7 +14151,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     .work-images .slide .g-col-5 {
         padding: 0 15px 0 15px;
         max-width: 473px;
-        color: var(--coreGray);
+        color: var(--coreGrey);
     }
 }
 
@@ -14182,7 +14183,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     top: 0;
     bottom: 0;
     width: 15px;
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -14256,7 +14257,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 .work-images ul.slick-dots li.active:before,
 .work-images ul.slick-dots li.slick-active:before {
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 .work-images ul.slick-dots li button {
@@ -14282,7 +14283,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     top: 0;
     bottom: 0;
     width: 14px;
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -14390,7 +14391,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 }
 
 .work-contact .label h2:hover {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .work-contact .label h2:hover span {
@@ -14416,14 +14417,14 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 .work-related {
     position: relative;
-    border-bottom: 14px solid var(--coreGray);
+    border-bottom: 14px solid var(--coreGrey);
     padding-top: 50px;
     padding-bottom: 70px;
 }
 
 @media (min-width:768px) {
     .work-related {
-        border-bottom: 15px solid var(--coreGray);
+        border-bottom: 15px solid var(--coreGrey);
     }
 }
 
@@ -14441,7 +14442,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     top: 0;
     bottom: 0;
     width: 14px;
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -14456,7 +14457,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     bottom: 0;
     height: 16px;
     width: 16px;
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -14618,7 +14619,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 .work-related .name a:hover,
 .work-related .name a:focus {
-    text-decoration-color: var(--coreGray);
+    text-decoration-color: var(--coreGrey);
 }
 
 .passwordprotectedspacing-top-default {
@@ -14691,7 +14692,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     font-size: 18px;
     line-height: 22px;
     font-weight: 300;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .passwordprotected input.btn-cta {
@@ -14777,7 +14778,7 @@ body.archive main {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: 400;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -14988,7 +14989,7 @@ body.archive main {
 
 .blog-posts .pagination .wp-paginate .next path,
 .blog-posts .pagination .wp-paginate .prev path {
-    stroke: var(--coreGray) !important;
+    stroke: var(--coreGrey) !important;
 }
 
 body.single-post main {
@@ -15047,7 +15048,7 @@ body.single-post main {
     font-size: 24px;
     line-height: 36px;
     font-weight: 300;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 #blog-content .content blockquote.quote p {
@@ -15056,7 +15057,7 @@ body.single-post main {
     font-size: 24px;
     line-height: 36px;
     font-weight: 300;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 #blog-content .content blockquote.quote p:first-child {
@@ -15077,7 +15078,7 @@ body.single-post main {
     line-height: 22px;
     font-weight: 500;
     letter-spacing: 1.5px;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 #blog-content .content .list {
@@ -15224,7 +15225,7 @@ body.single-post main {
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 @media (min-width:768px) {
@@ -15304,7 +15305,7 @@ body.single-post main {
 
 #blog-content .tags a:hover,
 #blog-content .tags a:focus {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .blog-text.spacing-top-default {
@@ -15698,7 +15699,7 @@ body.single-post main {
     font-weight: 300;
     letter-spacing: 0.3px;
     font-weight: 400;
-    color: var(--coreGray);
+    color: var(--coreGrey);
     text-decoration: none;
     text-decoration: underline;
     text-decoration-thickness: 1px;
@@ -15716,7 +15717,7 @@ body.single-post main {
 
 #blog-related .right a:hover,
 #blog-related .right a:focus {
-    text-decoration-color: var(--coreGray);
+    text-decoration-color: var(--coreGrey);
 }
 
 body.search {
@@ -15866,7 +15867,7 @@ body.search .pagination .wp-paginate .prev svg {
 
 body.search .pagination .wp-paginate .next path,
 body.search .pagination .wp-paginate .prev path {
-    stroke: var(--coreGray) !important;
+    stroke: var(--coreGrey) !important;
 }
 
 .page-template-page-legal {
@@ -15991,12 +15992,12 @@ body.search .pagination .wp-paginate .prev path {
 
 .page-template-page-legal #legal-header p a:hover,
 .page-template-page-legal #legal-header p a:focus {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .page-template-page-legal #legal-header p a:hover:after,
 .page-template-page-legal #legal-header p a:focus:after {
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
 
 .error404 {
@@ -16068,10 +16069,10 @@ body.search .pagination .wp-paginate .prev path {
 
 .error404 #default-header p a:hover,
 .error404 #default-header p a:focus {
-    color: var(--coreGray);
+    color: var(--coreGrey);
 }
 
 .error404 #default-header p a:hover:after,
 .error404 #default-header p a:focus:after {
-    background: var(--coreGray);
+    background: var(--coreGrey);
 }
