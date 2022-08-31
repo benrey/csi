@@ -2772,12 +2772,12 @@ body.scrolled #site-header.light #nav-toggle span {
     background: #454545;
 }
 
-body.single-work #site-header.light nav li.menu-item-16 a:after {
+body.single-work #site-header.light nav li.nav-item-16 a:after {
     background: var(--pure);
 }
 
 @media (min-width:768px) {
-    body.single-work.scrolled #site-header.light nav li.menu-item-16 a:after {
+    body.single-work.scrolled #site-header.light nav li.nav-item-16 a:after {
         background: #454545;
     }
 }
