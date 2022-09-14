@@ -497,13 +497,6 @@
                 </div>
             </section>
         </main>
-
-
-
-
-
-
-
         <footer id="site-footer">
             <div class="g-container">
 
@@ -514,7 +507,6 @@
                         &copy; 2022 Coating Specialists
                     </div>
                 </div>
-
                 <nav class="g-row nav">
                     <div class="g-col right">
                         <ul id="menu-footer-right" class="menu">
@@ -545,7 +537,6 @@
                                     </ul>
                     </div>
                 </nav>
-
                 <div class="g-row copyright mobile">
                     <div class="g-col">
                         <a href="https://www.coatingspecialists.com"><img src="./images/CSI_R.svg"
@@ -553,13 +544,9 @@
                         <div>&copy; 2022 Coating Specialists</div>
                     </div>
                 </div>
-
             </div>
         </footer>
-
         <div>
-
-
             <div id="cookie-policy" style="display: none;">
                 <div class="g-container">
                     <p>This site uses cookies to improve your website experience. By using our site, you agree to and
@@ -567,10 +554,8 @@
                     <a href="#close" id="cookie-close">Allow Cookies</a>
                 </div>
             </div>
-
             <script>
                 jQuery(document).ready(function ($) {
-
                     if (document.cookie.indexOf('coatingspecialists-cookienotice=') == -1) {
                         $('#cookie-policy').show();
                     }
@@ -579,15 +564,12 @@
                     });
                     $('#cookie-policy #cookie-close').click(function (e) {
                         e.preventDefault();
-
                         var d = new Date();
                         d.setTime(d.getTime() + (90 * 24 * 60 * 60 * 1000));
                         var expires = "expires=" + d.toUTCString();
                         document.cookie = "coatingspecialists-cookienotice" + "=" + "hide" + ";" + expires + ";path=/";
-
                         $('#cookie-policy').fadeOut();
                     });
-
                 });
             </script>
             <script type='text/javascript' src='./scripts/js/plugins.js?ver=1.0.0' id='coatingspecialists-plugins-js'></script>
@@ -598,11 +580,8 @@
                         /* ]]> */
             </script>
             <script type='text/javascript' src='./scripts/js/contact.js?ver=1.0.0' id='coatingspecialists-vars-js'></script>
-
             <!-- <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1_nCNk-ovoMCBigYG57hCj4dBVYnoHAs&callback=initGeocoder">
             </script> -->
-
 </body>
-
 </html>
