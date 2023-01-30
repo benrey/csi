@@ -6283,7 +6283,7 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 @media (min-width:768px) {
     #home-banner {
         height: 0;
-        padding-top: 49.85%;
+        padding-top: 45%;
     }
 }
 
