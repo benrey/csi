@@ -1,0 +1,86 @@
+<section class="block-featured-projects" id="section2">
+    <div class="corner"></div>
+    <div class="g-container">
+        <div class="g-row g-row-height-equal row1">
+            <div class="g-col g-col-5 g-col-offset-1 col-align-bottom" data-aos="fade-up"
+                data-aos-delay="300">
+                <h2><span>Featured Projects</span></h2>
+            </div>
+            <div class="g-col g-col-5 g-col-offset-1 col-align-top" data-aos="fade-up">
+                <p>We specialize in providing high-quality protective and decorative coating solutions for a variety of industries.</p>
+
+                <a href="./work.html" target="_self" class="btn-cta btn-cta-dark-orange">Coating Solutions</a>
+            </div>
+        </div>
+        <div class="g-row row2">
+            <div class="g-col-6 col1">
+                <div class="project-thumb num-odd label-bottom label-left-desktop label-right-mobile orientation-horiz"
+                    data-aos="fade-up" data-aos-delay="600">
+                    <div class="offset">
+                        <div class="label top">Major Universities<a
+                                href="./finding-sustainable-solutions.html"></a></div>
+                    </div>
+                    <a href="./finding-sustainable-solutions.html"
+                        class="img corners-right">
+                        <div
+                            style="background: url(./images/block-capabilities/tt.jpg);">
+                        </div><img
+                            src="./images/block-capabilities/tt.jpg"
+                            alt="Finding Sustainable Solutions">
+                    </a>
+                    <div class="offset">
+                        <div class="label bottom"><a
+                                href="./images/block-capabilities/tt.jpg">Major Universities</a></div>
+                    </div>
+                </div>
+
+                <div class="project-cta" data-aos="fade">
+                    <a href="./work.html" target="_self" class="btn-cta btn-cta-dark-orange"></a>
+                </div>
+            </div>
+            <div class="g-col-6 col2">
+                <div class="project-thumb num-even label-top label-left-desktop label-left-mobile orientation-vert last"
+                    data-aos="fade-up" data-aos-delay="900">
+                    <div class="offset">
+                        <div class="label top"><a
+                                href="./demonstrating-excellence.html">Local Businesses</a></div>
+                    </div>
+                    <a href="./demonstrating-excellence.html"
+                        class="img corners-top">
+                        <div
+                            style="background: url(./images/block-capabilities/localbusiness.jpg);">
+                        </div><img
+                            src="./images/block-capabilities/localbusiness.jpg"
+                            alt="Demonstrating Excellence">
+                    </a>
+                    <div class="offset">
+                        <div class="label bottom"><a
+                                href="./demonstrating-excellence.html">Local Businesses</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    jQuery(document).ready(function ($) {
+
+        // label
+        $('#section2 .label a').hover(
+            function () {
+                $(this).closest('.project-thumb').find('.img').toggleClass('hover');
+            }, function () {
+                $(this).closest('.project-thumb').find('.img').toggleClass('hover');
+            });
+
+        // image
+        $('#section2 .img').hover(
+            function () {
+                $(this).closest('.project-thumb').find('.label a').toggleClass('hover');
+            }, function () {
+                $(this).closest('.project-thumb').find('.label a').toggleClass('hover');
+            });
+
+    });
+</script>

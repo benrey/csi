@@ -1,0 +1,167 @@
+<section class="block-capabilities" id="section1">
+    <div class="g-container">
+        <div class="g-row g-row-height-equal">
+            <div class="g-col g-col-6">
+                <div class="box" data-aos="fade-up" data-aos-offset="0">
+                    <h2>Core Capabilities</h2>
+                    <div class="list">
+                        <ul class="mobile">
+                            <li data-num="0"><a
+                                    href="./powder-coating.html"><span>1</span>Powder
+                                    Coating</a></li>
+                            <li data-num="1"><a
+                                    href="./abrassive-blasting.html"><span>2</span>
+                                    Abrassive Blasting</a></li>
+                            <li data-num="2"><a
+                                    href="./cerakote.html"><span>3</span>
+                                    Cerakote</a></li>
+                            <li data-num="3"><a
+                                    href="./hydro-dipping.html"><span>4</span>
+                                    Hydrographics</a></li>
+                            <li data-num="4"><a
+                                    href="./industrial-coatings.html"><span>5</span>
+                                    Industrial Coatings</a></li>
+                            <li data-num="5"><a
+                                    href="./inventory-management.html"><span>6</span>
+                                    Manufacturing</a></li>
+                        </ul>
+                        <ul class="desktop">
+                            <li data-num="0" class="active"><span>1</span> <a
+                                    href="./powder-coating.html">Powder
+                                    Coating</a></li>
+                            <li data-num="3"><span>4</span> <a
+                                    href="./hydro-dipping.html">Hydrographics</a>
+                            </li>
+                            <li data-num="1"><span>2</span> <a
+                                    href="./abrassive-blasting.html">Abrassive
+                                    Blasting</a>
+                            </li>
+                            <li data-num="4"><span>5</span> <a
+                                    href="./industrial-coating.html">Industrial
+                                    Coatings</a></li>
+                            <li data-num="2"><span>3</span> <a
+                                    href="./cerakote.html">Cerakote</a>
+                            </li>
+                            <li data-num="5"><span>6</span> <a
+                                    href="./inventory-management.html">Manufacturing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="g-col g-col-6">
+                <div class="slideshow" data-aos="fade">
+                    <div class="slide">
+                        <div class="text">
+                             <p>Our powder coating services help protect from corrosion. We have the experience to take you through the process from powder selection to delivery. </p>
+                        </div>
+                        <div class="image"
+                            style="background: url(./images/block-capabilities/powder-coating.jpg);">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="text">
+                            <p>This is the foundation of the coating process. With 3 massive booths, we are able to keep your projects on schedule. Only using virgin aluminum oxide ensures proper prep for each project. </p>
+                        </div>
+                        <div class="image"
+                            style="background: url(./images/block-capabilities/abrassive-blasting.jpg);">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="text">
+                            <p>From handguns to weatherproofing outdoor surfaces, we offer a wide range of
+                                capabilities.
+                            </p>
+                        </div>
+                        <div class="image"
+                            style="background: url(./images/block-capabilities/cerakote2x.png);">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="text">
+                            <p>For the most unique look, to add that one of a kind feel, ask about our
+                                hydrodipping
+                                services.</p>
+                        </div>
+                        <div class="image"
+                            style="background: url(./images/block-capabilities/hydro-graphics.jpg);">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="text">
+                            <!-- <p>We have equipment to handle large and small projects with an eye
+                                toward craftsmanship.</p> -->
+                                <p>We have equipment to handle large and small projects with an eye toward quality. Much like our other services, Industrial coating is for corrosion protection. Through our extensive supplier network, we can help ensure the correct product is applied to add value to your project. </p>
+                        </div>
+                        <div class="image"
+                            style="background: url(./images/block-capabilities/industrial2x.png);">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="text">
+                            <!-- <p>Transform product vision into tangible, real world experiences.</p> -->
+                            <p>Our network of manufacturing partners knows what it takes to take products from concept to market. We can provide a turnkey solution to any project large or small. </p>
+                        </div>
+                        <div class="image"
+                            style="background: url(./images/block-capabilities/manufacturing2x.png);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+
+        var slider = $('.slideshow');
+        slider.slick({
+            infinite: true,
+            slidesToShow: 1,
+            autoplay: false,
+            autoplaySpeed: 5000,
+            speed: 300,
+            fade: true,
+            adaptiveHeight: true,
+            dots: false,
+            arrows: false,
+            pauseOnHover: true,
+            pauseOnFocus: true
+        }).slick("slickPause");
+
+        setTimeout(function () {
+            slider.slick("slickPlay");
+        }, 3000);
+
+        // pause slideshow on hover
+        $('.box').hover(
+            function () {
+                slider.slick("slickPause");
+            },
+            function () {
+                slider.slick("slickPlay");
+            }
+        );
+
+        // change slide on nav hover
+        $('.box li').hoverIntent(function (e) {
+            e.preventDefault();
+            var num = $(this).data('num');
+
+            slider.slick('slickGoTo', parseInt(num));
+
+            $('.box li.active').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        // change nav on slide change
+        $('.slideshow').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+            $('.box li.active').removeClass('active');
+            $('.box ul.desktop li[data-num=' + nextSlide + ']').addClass('active');
+        });
+
+        AOS.refresh();
+
+    });
+</script>
