@@ -1,0 +1,156 @@
+<section class="block-slideshow offset" id="section1">
+    <div class="slideshow-arrows">
+        <div class="prev"><svg xmlns="http://www.w3.org/2000/svg" width="15.766" height="29.764"
+                viewBox="0 0 15.766 29.764">
+                <g id="Group_800" data-name="Group 800" transform="translate(0.884 0.884)">
+                    <path id="Path_94" data-name="Path 94" d="M0,0,14,14,0,28"
+                        transform="translate(13.998 27.996) rotate(180)" fill="none" stroke="#bcb9b2"
+                        stroke-linecap="round" stroke-width="1.25" />
+                </g>
+            </svg></div>
+
+        <div class="next"><svg xmlns="http://www.w3.org/2000/svg" width="15.766" height="29.764"
+                viewBox="0 0 15.766 29.764">
+                <g id="Group_729" data-name="Group 729" transform="translate(14.882 28.88) rotate(180)">
+                    <path id="Path_94" data-name="Path 94" d="M0,0,14,14,0,28"
+                        transform="translate(13.998 27.996) rotate(180)" fill="none" stroke="#bcb9b2"
+                        stroke-linecap="round" stroke-width="1.25" />
+                </g>
+            </svg></div>
+    </div>
+
+    <div class="slideshow-images" data-aos="fade">
+        <div class="slide">
+            <div class="image"
+                style="background: url(./uploads/2021/01/STE-Principles-1-_1c-TransparentBlue-700x700.png);">
+            </div>
+        </div>
+        <div class="slide">
+            <div class="image"
+                style="background: url(./uploads/2021/06/STE-Principles-2-TransparentBlue-700x700.png);">
+            </div>
+        </div>
+        <div class="slide">
+            <div class="image"
+                style="background: url(./uploads/2021/01/STE-Principles-1-_3-TransparentBlue-700x700.png);">
+            </div>
+        </div>
+        <div class="slide">
+            <div class="image"
+                style="background: url(./uploads/2021/06/STE-Principles-4-TransparentBlue-700x700.png);">
+            </div>
+        </div>
+        <div class="slide">
+            <div class="image"
+                style="background: url(./uploads/2021/06/STE-Principles-5-TransparentBlue-700x700.png);">
+            </div>
+        </div>
+    </div>
+    <div class="g-container">
+        <div class="g-row">
+            <div class="g-col g-col-5 g-col-offset-6">
+                <div class="slideshow-text" data-aos="fade-up" data-aos-offset="0">
+                    <div class="slide">
+                        <div class="title">FIVE PRINCIPLES</div>
+                        <!-- <div class="title"><span>FIVE PRINCIPLES</span></div> -->
+                        <div class="img"><img
+                                src="./uploads/2021/01/STE-Principles-1-_1c-TransparentBlue-700x700.png"
+                                alt=""></div>
+                        <!-- <div class="subtitle"><span class="num">1.</span>People First</div> -->
+                        <div class="subtitle"><span class="num">1.</span>Lorem!</div>
+                        <div class="description">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="title"><span>FIVE PRINCIPLES</span></div>
+                        <div class="img"><img
+                                src="./uploads/2021/06/STE-Principles-2-TransparentBlue-700x700.png" alt="">
+                        </div>
+                        <div class="subtitle"><span class="num">2.</span>Ipsum</div>
+                        <div class="description">
+                            <!-- <p>How we deliver is just as important as what we deliver. Seeing the
+                                opportunity in every challenge, we are relentless in our commitment to each
+                                client.</p> -->
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="title"><span>FIVE PRINCIPLES</span></div>
+                        <div class="img"><img
+                                src="./uploads/2021/01/STE-Principles-1-_3-TransparentBlue-700x700.png"
+                                alt=""></div>
+                        <div class="subtitle"><span class="num">3.</span>Dolor
+                        </div>
+                        <div class="description">
+                            <!-- <p>We recognize that our services can make or break whether a product makes it
+                                to market. We don’t take that responsibility lightly.</p> -->
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="title"><span>FIVE PRINCIPLES</span></div>
+                        <div class="img"><img
+                                src="./uploads/2021/06/STE-Principles-4-TransparentBlue-700x700.png" alt="">
+                        </div>
+                        <div class="subtitle"><span class="num">4.</span>Sit</div>
+                        <div class="description">
+                            <!-- <p>Designing, finalizing and shipping products is wrought with complexities and
+                                emotions. We offer solutions that are flexible, adaptive and empathetic to
+                                our clients’ fluctuating circumstances.</p> -->
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="title"><span>FIVE PRINCIPLES</span></div>
+                        <div class="img"><img
+                                src="./uploads/2021/06/STE-Principles-5-TransparentBlue-700x700.png" alt="">
+                        </div>
+                        <div class="subtitle"><span class="num">5.</span>Amet</div>
+                        <div class="description">
+                            <!-- <p>We straddle various sectors operating in both mature markets, and rapidly
+                                changing and evolving markets. We see this complexity as an opportunity to
+                                pioneer change.</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('#section1 .slideshow-images').slick({
+            infinite: true,
+            slidesToShow: 1,
+            autoplay: false,
+            speed: 1000,
+            fade: true,
+            dots: false,
+            arrows: false
+        });
+
+        $('#section1 .slideshow-text').slick({
+            infinite: true,
+            slidesToShow: 1,
+            autoplay: false,
+            speed: 1000,
+            fade: true,
+            dots: true,
+            arrows: false,
+            adaptiveHeight: true,
+            asNavFor: '#section1 .slideshow-images',
+
+            customPaging: function (slider, i) {
+                return '<span></span>';
+            },
+        });
+
+        $("#section1 .prev").click(function (e) {
+            e.preventDefault();
+            $('#section1 .slideshow-text').slick('slickPrev');
+        });
+        $("#section1 .next").click(function (e) {
+            e.preventDefault();
+            $('#section1 .slideshow-text').slick('slickNext');
+        });
+        AOS.refresh();
+    });
+</script>
