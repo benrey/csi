@@ -9127,6 +9127,10 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     z-index: 1;
     padding: 65px 0;
 }
+.block-three-spotlights a {
+    color: var(--pure);
+    font-weight: bold;
+}
 
 @media (min-width:768px) {
     .block-three-spotlights .g-row {
@@ -11287,8 +11291,8 @@ body.single-capability #contactSuccess .g-col-offset-1 {
 
 @media (min-width:1024px) {
     .block-careers-content1 {
-        padding-top: 100px;
-        padding-bottom: 90px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 
@@ -12216,8 +12220,17 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     display: none;
 }
 
+.block-contact-tabs .table .table-header .cell3 {
+    display: none;
+}
+
 @media (min-width:768px) {
     .block-contact-tabs .table .table-header .cell2 {
+        display: block;
+    }
+}
+@media (min-width:768px) {
+    .block-contact-tabs .table .table-header .cell3 {
         display: block;
     }
 }
@@ -12249,7 +12262,11 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     .block-contact-tabs .table .table-cell.cell2 {
         width: 57%;
     }
+    .block-contact-tabs .table .table-cell.cell3 {
+        width: 57%;
+    }
 }
+
 
 .block-contact-tabs .table .table-header .cell1 path {
     -webkit-transition: all 0.3s ease;
@@ -12490,8 +12507,18 @@ body.single-capability #contactSuccess .g-col-offset-1 {
     display: block;
 }
 
+.block-contact-tabs .table .table-row.active .cell3 .news {
+    display: block;
+}
+
 @media (min-width:768px) {
     .block-contact-tabs .table .table-row.active .cell2 .news {
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+    .block-contact-tabs .table .table-row.active .cell3 .news {
         display: none;
     }
 }
